@@ -1,0 +1,5438 @@
+﻿[Dictionary]
+Version=CSPro 7.3
+Label=Household
+Name=HOUSEHOLD_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Household Level
+Name=HOUSEHOLD_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Stratum
+Name=STRATUM
+Start=2
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=District
+Name=DISTRICT
+Start=4
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Village
+Name=VILLAGE
+Start=6
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Locality
+Name=LOCALITY
+Start=8
+Len=3
+ZeroFill=Yes
+
+[Item]
+Label=EA
+Name=EA
+Start=11
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=Dwelling No
+Name=DWELLING_NO
+Start=15
+Len=5
+ZeroFill=Yes
+
+[Item]
+Label=Household No
+Name=HOUSEHOLD_NO
+Start=20
+Len=3
+ZeroFill=Yes
+
+[Record]
+Label=Interview
+Name=INTERVIEW
+RecordTypeValue='1'
+RecordLen=131
+
+[Item]
+Label=Respondent Line
+Name=RESPONDENT_LINE
+Start=23
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Interview Date
+Name=INTERVIEW_DATE
+Start=25
+Len=8
+ZeroFill=Yes
+
+[Item]
+Label=Year
+Name=YEAR
+Start=25
+Len=4
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Month
+Name=MONTH
+Start=29
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Day
+Name=DAY
+Start=31
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Interview Start Time
+Name=INTERVIEW_START_TIME
+Start=33
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=Start Hour
+Name=START_HOUR
+Start=33
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Start Minutes
+Name=START_MINUTES
+Start=35
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Interview End Time
+Name=INTERVIEW_END_TIME
+Start=37
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=End Hour
+Name=END_HOUR
+Start=37
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=End Minutes
+Name=END_MINUTES
+Start=39
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Latitude
+Name=LATITUDE
+Start=41
+Len=12
+Decimal=7
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=Longitude
+Name=LONGITUDE
+Start=53
+Len=12
+Decimal=7
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=District Name
+Name=DISTRICT_NAME1
+Start=65
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Village Name
+Name=VILLAGE_NAME
+Start=95
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Interviewer Code
+Name=INTERVIEWER_CODE
+Start=125
+Len=3
+ZeroFill=Yes
+
+[Item]
+Label=Supervisor Code
+Name=SUPERVISOR_CODE
+Start=128
+Len=3
+ZeroFill=Yes
+
+[Item]
+Label=Interview Status
+Name=INTERVIEW_STATUS
+Start=131
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Interview Status
+Name=INTERVIEW_STATUS_VS1
+Value=1;Completed
+Value=2;Present But No Respondent At Home
+Value=3;Postponed
+Value=4;Refused
+Value=5;Partially Completed
+Value=6;Dwelling Vacant
+Value=7;Dwelling Destroyed
+
+[Record]
+Label=Section_A
+Name=SECTION_A
+RecordTypeValue='2'
+MaxRecords=30
+RecordLen=323
+
+[Item]
+Label=Person Name
+Name=A1_PERSON_NAME
+Start=23
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Person Serial No.
+Name=A2_SERIAL_NO
+Start=53
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Person Serial No.
+Name=A2_SERIAL_NO_VS1
+Value=1:30
+
+[Item]
+Label=Relationship
+Name=A3_RELATIONSHIP
+Start=55
+Len=2
+
+[ValueSet]
+Label=Relationship
+Name=A3_RELATIONSHIP_VS1
+Value=0;Head
+Value=1;Spouse/ Partner
+Value=2;Son/ Daughter
+Value=3;Son/ Daughter-In-Law
+Value=4;Step Child
+Value=5;Grandchild
+Value=6;Parent
+Value=7;Father-In-Law
+Value=8;Grand Parent
+Value=9;Brother/ Sister
+Value=10;Nephew/ Niece
+Value=11;Other Relative
+Value=12;Visitor
+Value=13;Not Related
+
+[Item]
+Label=Sex
+Name=A4_SEX
+Start=57
+Len=1
+
+[ValueSet]
+Label=Sex
+Name=A4_SEX_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=Age in Years
+Name=A5_AGE
+Start=58
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Age in Years
+Name=A5_AGE_VS1
+Value=0:98
+
+[Item]
+Label=Date of Birth
+Name=A6_DOB
+Start=60
+Len=6
+
+[Item]
+Label=Month of Birth
+Name=A6M_MOB
+Start=60
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=Month of Birth
+Name=A6M_MOB_VS1
+Value=1:12
+
+[Item]
+Label=Year of Birth
+Name=A6Y_YOB
+Start=62
+Len=4
+ItemType=SubItem
+
+[ValueSet]
+Label=Year of Birth
+Name=A6Y_YOB_VS1
+Value=1922:2020
+
+[Item]
+Label=Country of Citizenship
+Name=A7_CITIZENSHIP
+Start=66
+Len=3
+
+[ValueSet]
+Label=Country of Citizenship
+Name=A7_CITIZENSHIP_VS1
+Value=4;Afghanistan
+Value=8;Albania
+Value=10;Antarctica
+Value=12;Algeria
+Value=16;American Samoa
+Value=20;Andorra
+Value=24;Angola
+Value=28;Antigua and Barbuda
+Value=31;Azerbaijan
+Value=32;Argentina
+Value=36;Australia
+Value=40;Austria
+Value=44;Bahamas
+Value=48;Bahrain
+Value=50;Bangladesh
+Value=51;Armenia
+Value=52;Barbados
+Value=56;Belgium
+Value=60;Bermuda
+Value=64;Bhutan
+Value=68;Bolivia
+Value=70;Bosnia and Herzegovina
+Value=72;Botswana
+Value=74;Bouvet Island
+Value=76;Brazil
+Value=84;Belize
+Value=86;British Indian Ocean Territory
+Value=90;Solomon Islands
+Value=92;British Virgin Islands
+Value=96;Brunei Darussalam
+Value=100;Bulgaria
+Value=104;Myanmar
+Value=108;Burundi
+Value=112;Belarus
+Value=116;Cambodia
+Value=120;Cameroon
+Value=124;Canada
+Value=132;Cape Verde
+Value=136;Cayman Islands
+Value=140;Central African Republic
+Value=144;Sri Lanka
+Value=148;Chad
+Value=152;Chile
+Value=156;China
+Value=158;Taiwan, Province of China
+Value=162;Christmas Island
+Value=166;Cocos (Keeling) Islands
+Value=170;Colombia
+Value=174;Comoros
+Value=175;Mayotte
+Value=178;Congo
+Value=180;Democratic Republic of the Congo
+Value=184;Cook Islands
+Value=188;Costa Rica
+Value=191;Croatia
+Value=192;Cuba
+Value=196;Cyprus
+Value=203;Czech Republic
+Value=204;Benin
+Value=208;Denmark
+Value=212;Dominica
+Value=214;Dominican Republic
+Value=218;Ecuador
+Value=222;El Salvador
+Value=226;Equatorial Guinea
+Value=231;Ethiopia
+Value=232;Eritrea
+Value=233;Estonia
+Value=234;Faroe Islands
+Value=238;Falkland Islands (Malvinas)
+Value=239;South Georgia and the South Sandwich Islands
+Value=242;Fiji
+Value=246;Finland
+Value=248;Aland Islands
+Value=250;France
+Value=254;French Guiana
+Value=258;French Polynesia
+Value=260;French Southern Territories
+Value=262;Djibouti
+Value=266;Gabon
+Value=268;Georgia
+Value=270;Gambia
+Value=275;Palestine, State of
+Value=276;Germany
+Value=288;Ghana
+Value=292;Gibraltar
+Value=296;Kiribati
+Value=300;Greece
+Value=304;Greenland
+Value=308;Grenada
+Value=312;Guadeloupe
+Value=316;Guam
+Value=320;Guatemala
+Value=324;Guinea
+Value=328;Guyana
+Value=332;Haiti
+Value=334;Heard Island and McDonald Islands
+Value=336;Holy See (Vatican City State)
+Value=340;Honduras
+Value=344;Hong Kong
+Value=348;Hungary
+Value=352;Iceland
+Value=356;India
+Value=360;Indonesia
+Value=364;Iran, Islamic Republic of
+Value=368;Iraq
+Value=372;Ireland
+Value=376;Israel
+Value=380;Italy
+Value=384;CÃ´te d’Ivoire
+Value=388;Jamaica
+Value=392;Japan
+Value=398;Kazakhstan
+Value=400;Jordan
+Value=404;Kenya
+Value=408;Korea, Democratic People’s Republic of
+Value=410;Korea, Republic of
+Value=414;Kuwait
+Value=417;Kyrgyzstan
+Value=418;Lao People’s Democratic Republic
+Value=422;Lebanon
+Value=426;Lesotho
+Value=428;Latvia
+Value=430;Liberia
+Value=434;Libya
+Value=438;Liechtenstein
+Value=440;Lithuania
+Value=442;Luxembourg
+Value=446;Macao
+Value=450;Madagascar
+Value=454;Malawi
+Value=458;Malaysia
+Value=462;Maldives
+Value=466;Mali
+Value=470;Malta
+Value=474;Martinique
+Value=478;Mauritania
+Value=480;Mauritius
+Value=484;Mexico
+Value=492;Monaco
+Value=496;Mongolia
+Value=498;Moldova, Republic of
+Value=499;Montenegro
+Value=500;Montserrat
+Value=504;Morocco
+Value=508;Mozambique
+Value=512;Oman
+Value=516;Namibia
+Value=520;Nauru
+Value=524;Nepal
+Value=528;Netherlands
+Value=531;CuraÃ§ao
+Value=533;Aruba
+Value=534;Sint Maarten (Dutch part)
+Value=535;Bonaire
+Value=540;New Caledonia
+Value=548;Vanuatu
+Value=554;New Zealand
+Value=558;Nicaragua
+Value=562;Niger
+Value=566;Nigeria
+Value=570;Niue
+Value=574;Norfolk Island
+Value=578;Norway
+Value=580;Northern Mariana Islands
+Value=581;United States Minor Outlying Islands
+Value=583;Micronesia, Federated States of
+Value=584;Marshall Islands
+Value=585;Palau
+Value=586;Pakistan
+Value=591;Panama
+Value=598;Papua New Guinea
+Value=600;Paraguay
+Value=604;Peru
+Value=608;Philippines
+Value=612;Pitcairn
+Value=616;Poland
+Value=620;Portugal
+Value=624;Guinea-Bissau
+Value=626;Timor-Leste
+Value=630;Puerto Rico
+Value=634;Qatar
+Value=638;Reunion
+Value=642;Romania
+Value=643;Russian Federation
+Value=646;Rwanda
+Value=652;Saint Barthelemy
+Value=654;Saint Helena
+Value=659;Saint Kitts and Nevis
+Value=660;Anguilla
+Value=662;Saint Lucia
+Value=663;Saint Martin (French part)
+Value=666;Saint Pierre and Miquelon
+Value=670;Saint Vincent and the Grenadines
+Value=674;San Marino
+Value=678;Sao Tome and Principe
+Value=682;Saudi Arabia
+Value=686;Senegal
+Value=688;Serbia
+Value=690;Seychelles
+Value=694;Sierra Leone
+Value=702;Singapore
+Value=703;Slovakia
+Value=704;Viet Nam
+Value=705;Slovenia
+Value=706;Somalia
+Value=710;South Africa
+Value=716;Zimbabwe
+Value=724;Spain
+Value=728;South Sudan
+Value=729;Sudan
+Value=732;Western Sahara
+Value=740;Suriname
+Value=744;Svalbard and Jan Mayen
+Value=748;Swaziland
+Value=752;Sweden
+Value=756;Switzerland
+Value=760;Syrian Arab Republic
+Value=762;Tajikistan
+Value=764;Thailand
+Value=768;Togo
+Value=772;Tokelau
+Value=776;Tonga
+Value=780;Trinidad and Tobago
+Value=784;United Arab Emirates
+Value=788;Tunisia
+Value=792;Turkey
+Value=795;Turkmenistan
+Value=796;Turks and Caicos Islands
+Value=798;Tuvalu
+Value=800;Uganda
+Value=804;Ukraine
+Value=807;Macedonia, the Former Yugoslav Republic of
+Value=818;Egypt
+Value=826;United Kingdom
+Value=831;Guernsey
+Value=832;Jersey
+Value=833;Isle of Man
+Value=834;United Republic of Tanzania
+Value=840;United States
+Value=850;US Virgin Islands
+Value=854;Burkina Faso
+Value=858;Uruguay
+Value=860;Uzbekistan
+Value=862;Venezuela
+Value=876;Wallis and Futuna
+Value=882;Samoa
+Value=887;Yemen
+Value=894;Zambia
+
+[Item]
+Label=Citizenship  Acquired
+Name=A8_CIT_ACQUIRED
+Start=69
+Len=1
+
+[ValueSet]
+Label=Citizenship  Acquired
+Name=A8_CIT_ACQUIRED_VS1
+Value=1;Yes born in Botswana
+Value=2;Yes by Naturalization
+
+[Item]
+Label=Duration of  Residence
+Name=A9_RESIDENCE
+Start=70
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Mothers's Place of Birth
+Name=A10_PLACE_BIRTH
+Start=72
+Len=7
+ZeroFill=Yes
+
+[Item]
+Label=Place Usually Live Now
+Name=A11_PLACE_NOW
+Start=79
+Len=4
+ZeroFill=Yes
+
+[ValueSet]
+Label=Place Usually Live Now
+Name=A11_PLACE_NOW_VS1
+Value=1;In this hosing unit
+Value=2;Elsewhere in this locality
+Value=66;Elsewhere in Botswana (State town District)
+Value=7;Other Country
+
+[Item]
+Label=Residence 1 Year Ago
+Name=A12_RES_YR_AGO
+Start=83
+Len=4
+ZeroFill=Yes
+
+[ValueSet]
+Label=Residence 1 Year Ago
+Name=A12_RES_YR_AGO_VS1
+Value=0;Not Born
+Value=1;In this housing unit
+Value=2;Elsewhere in this locality
+Value=6;Elsewhere in Botswana (state Town / District)
+Value=7;Other Country
+
+[Item]
+Label=Residence 5 Years Ago
+Name=A13_RES_YR_AGO
+Start=87
+Len=4
+ZeroFill=Yes
+
+[ValueSet]
+Label=Residence 5 Years Ago
+Name=A13_RES_YR_AGO_VS1
+Value=0;Not Born
+Value=1;In this housing unit
+Value=2;Elsewhere in this locality
+Value=6;Elsewhere in Botswana (state Town/District)
+Value=7;Other Country
+
+[Item]
+Label=Biological Mother Alive
+Name=A14_MOTHER_ALIVE
+Start=91
+Len=1
+
+[ValueSet]
+Label=Biological Mother Alive
+Name=A14_MOTHER_ALIVE_VS1
+Value=1;Yes
+Value=2;No
+Value=3;Don't Know
+
+[Item]
+Label=Biological Father Alive
+Name=A15_FATHER_ALIVE
+Start=92
+Len=1
+
+[ValueSet]
+Label=Biological Father Alive
+Name=A15_FATHER_ALIVE_VS1
+Value=1;Yes
+Value=2;No
+Value=3;Don't know
+
+[Item]
+Label=Birth Registration
+Name=A16_BIRTH_REG
+Start=93
+Len=1
+
+[ValueSet]
+Label=Birth Registration
+Name=A16_BIRTH_REG_VS1
+Value=1;Yes
+Value=2;No
+Value=3;Dont Know
+
+[Item]
+Label=National ID (OMANG)
+Name=A17_ID_OMANG
+Start=94
+Len=1
+
+[ValueSet]
+Label=National ID (OMANG)
+Name=A17_ID_OMANG_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Language Spoken at Home
+Name=A18_SAM_LANG
+Start=95
+Len=3
+ZeroFill=Yes
+
+[ValueSet]
+Label=Language Spoken at Home
+Name=A18_SAM_LANG_VS1
+Value=1;Setswana
+Value=2;English
+Value=3;Ikalanga
+Value=4;Shekgalagari
+Value=5;Sesubiya
+Value=6;Sesarwa
+Value=7;Seyeyi
+Value=8;Sembukushu
+Value=9;Afrikaans
+Value=10;Ndebele
+Value=11;Shona
+Value=12;Seherero
+Value=13;Sign Language
+Value='   ';Other (Specify)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Early Childhood Language
+Name=A19_ECH_LANG
+Start=98
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Early Childhood Language
+Name=A19_ECH_LANG_VS1
+Value=1;Setswana
+Value=2;English
+Value=3;Ikalanga
+Value=4;Shekgalagari
+Value=5;Sesubiya
+Value=6;Sesarwa
+Value=7;Seyeyi
+Value=8;Sembukushu
+Value=9;Afrikaans
+Value=10;Ndebele
+Value=11;Shona
+Value=12;Seherero
+Value=13;Sign Language
+Value='  ';Other (Specify)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Tribe or Nationality
+Name=A20_TRIBE_NATIONALTY
+Start=100
+Len=3
+ZeroFill=Yes
+
+[ValueSet]
+Label=Tribe or Nationality
+Name=A20_TRIBE_NATIONALTY_VS1
+Value=10;Tswana
+Value=11;Bakgatla – Kgafela
+Value=12;Bakgatla- Mmanaana
+Value=13;Bakwena
+Value=14;Bamalete
+Value=15;Bangwaketse
+Value=16;Bangwato
+Value=17;Barolong
+Value=18;Batawana
+Value=19;Batlokwa
+Value=20;Bakalanga
+Value=30;Bakgalagari
+Value=31;Baboloungwe
+Value=32;Bakaa
+Value=33;Bakgothu
+Value=34;Bakgwatheng
+Value=35;Bakhurutshe
+Value=36;Bangologa
+Value=37;Baphaleng
+Value=38;Bashaga
+Value=39;Batlhware
+Value=40;Basubiya
+Value=50;Basarwa
+Value=51;Gana
+Value=52;Gwi
+Value=53;¹Hua
+Value=54;Ju|’Hoan
+Value=55;Shua
+Value=56;Khwedam
+Value=57;Naro
+Value=58;¹Kx’au||Ein
+Value=59;Tsowa
+Value=60; !Xóo
+Value=61; Kua
+Value=62;Nama
+Value=70;Bayeyi
+Value=80;Bambukushu
+Value=90;Afrikaans
+Value=110;Shona
+Value=120;Baherero
+Value=130;Bambanderu
+Value=140;Vekuhane
+Value=150;Batswapong
+Value=160;Banabjwa
+Value=170;Batshweneng
+Value=180;Barotsi
+Value=190;Bagciriku
+Value=200;Bahurutshe
+Value=210;Babirwa
+Value=220;Bakwangali
+Value=230;Mixed
+Value=250;Other Batswana
+Value=300;Refusal
+Value=615;Djibouti
+Value=616;Egypt
+Value=617;Equatorial Guinea
+Value=618;Eritrea
+Value=619;Ethiopia
+Value=620;Gabon
+Value=621;Gambia
+Value=622;Ghana
+Value=623;Guinea
+Value=624;Guinea-Bissau
+Value=625;Lesotho
+Value=626;Liberia
+Value=627;Libyan Arab Jamahiriya
+Value=628;Madagascar
+Value=629;Malawi
+Value=630;Mali
+Value=631;Mauritania
+Value=632;Mauritius
+Value=633;Morocco
+Value=634;Mozambique
+Value=635;Namibia
+Value=636;Niger
+Value=637;Nigeria
+Value=638;Rwanda
+Value=639;Sao Tome And Principe
+Value=640;Senegal
+Value=641;Seychelles
+Value=642;Sierra Leone
+Value=643;Somalia
+Value=644;South Africa
+Value=645;Sudan
+Value=646;South Sudan
+Value=647;Swaziland
+Value=648;Togo
+Value=649;Tunisia
+Value=650;Uganda
+Value=651;United Republic Of Tanzania
+Value=652;Zambia
+Value=653;Zimbabwe
+Value=685;Jordan
+Value=686;Kiribati
+Value=687;Kuwait
+Value=688;Lao People's Democratic Republic
+Value=689;Lebanon
+Value=690;Malaysia
+Value=691;Maldives
+Value=692;Micronesia, Federated States of...
+Value=693;Mongolia
+Value=694;Myanmar
+Value=695;Nauru
+Value=696;Nepal
+Value=697;Oman
+Value=698;Pakistan
+Value=699;Philippines
+Value=700;Qatar
+Value=701;Republic Of Korea
+Value=702;Republic Of Moldova
+Value=703;Saudi Arabia
+Value=704;Singapore
+Value=705;Sri Lanka
+Value=706;Suriname
+Value=707;Syrian Arab Republic
+Value=708;Thailand
+Value=709;Timor-Leste
+Value=710;United Arab Emirates
+Value=711;Vietnam
+Value=712;Yemen
+Value=721;Belarus
+Value=722;Belgium
+Value=723;Bosnia And Herzegovina
+Value=724;Bulgaria
+Value=725;Croatia
+Value=726;Cyprus
+Value=727;Czech Republic
+Value=728;Denmark
+Value=729;Estonia
+Value=730;Finland
+Value=731;France
+Value=732;Georgia
+Value=733;Germany
+Value=734;Greece
+Value=735;Hungary
+Value=736;Iceland
+Value=737;Ireland
+Value=738;Italy
+Value=739;Kazakhstan
+Value=740;Kyrgyzstan
+Value=741;Latvia
+Value=742;Liechtenstein
+Value=743;Lithuania
+Value=744;Luxembourg
+Value=745;Malta
+Value=746;Marshall Islands
+Value=747;Monaco
+Value=748;Montenegro
+Value=749;Netherlands
+Value=750;Norway
+Value=751;Poland
+Value=752;Portugal
+Value=753;Romania
+Value=754;Russian Federation
+Value=755;Saint Kitts And Nevis
+Value=756;Saint Lucia
+Value=757;Saint Vincent And The Grenadines
+Value=758;San Marino
+Value=759;Serbia
+Value=760;Slovakia
+Value=761;Slovenia
+Value=762;Spain
+Value=763;Sweden
+Value=764;Switzerland
+Value=793;El Salvador
+Value=765;Tajikistan
+Value=766;The Former Yugoslav Republic Of Macedonia
+Value=767;Turkey
+Value=768;Turkmenistan
+Value=769;Ukraine
+Value=770;United Kingdom Of Greatbritain And Northern Ireland
+Value=771;Uzbekistan
+Value=801;United States Of America
+Value=802;Uruguay
+Value=803;Venezuela (Bolivarian Republic Of)
+Value=810;Caribbean
+Value=811;Antigua And Barbuda
+Value=812;Bahamas
+Value=813;Barbados
+Value=814;Grenada
+Value=815;Guyana
+Value=816;Haiti
+Value=817;Jamaica
+Value=818;Solomon Islands
+Value=819;Trinidad And Tobago
+Value=820;Oceania And Pacific
+Value=821;Australia
+Value=822;Fiji
+Value=823;New Zealand
+Value=824;Palau
+Value=825;Papua New Guinea
+Value=826;Samoa
+Value=827;Tonga
+Value=828;Tuvalu
+Value=829;Vanuatu
+
+[Item]
+Label=Read or Write in any Language
+Name=A21_LITERACY
+Start=103
+Len=1
+
+[ValueSet]
+Label=Read or Write in any Language
+Name=A21_LITERACY_VS1
+Value=1;Yes
+Value=2;No
+Value=' ';NA
+Name=NOTAPPL,Special
+
+[Item]
+Label=Ever Attended School
+Name=A22_ATT_SCHOOL
+Start=104
+Len=1
+
+[ValueSet]
+Label=Ever Attended School
+Name=A22_ATT_SCHOOL_VS1
+Value=1;Still at school
+Value=2;Completed school
+Value=3;Discontinued
+Value=4;Never attended
+
+[Item]
+Label=Highest Level Attended
+Name=A23_HIGHEST_LEVEL
+Start=105
+Len=4
+ZeroFill=Yes
+
+[ValueSet]
+Label=Highest Level Attended
+Name=A23_HIGHEST_LEVEL_VS1
+Value=0;Preschool
+Value=1;Primary
+Value=2;Secondary
+Value=3;Non Formal - Basic education
+Value=11;Apprentice
+Value=12;Brigade
+Value=13;Technical/Vocational
+Value=14;Educational College
+Value=15;Institute of Health Sciences
+Value=16;University
+
+[Item]
+Label=Type of Education
+Name=A23B_TYPE_EDUC
+Start=105
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=Type of Education
+Name=A23B_TYPE_EDUC_VS1
+Value=0;Preschool
+Value=1;Primary
+Value=2;Secondary
+Value=3;Non Formal - Basic education
+Value=11;Apprentice
+Value=12;Brigade
+Value=13;Technical/Vocational
+Value=14;Educational College
+Value=15;Institute of Health Sciences
+Value=16;University
+
+[Item]
+Label=Level Completed / Doing
+Name=A23C_LEVEL_COMP
+Start=107
+Len=1
+ItemType=SubItem
+
+[ValueSet]
+Label=Level Completed / Doing
+Name=A23C_LEVEL_COMP_VS1
+Value=0;General Education
+Value=1;Certificate
+Value=2;Diploma
+Value=3;Degree
+Value=4;Post Graduate
+Value=5;PHP / Doctrate
+Value=' ';N/A
+Name=NOTAPPL,Special
+
+[Item]
+Label=Year Completed / Doing
+Name=A23D_YEAR_COMP
+Start=109
+Len=1
+
+[ValueSet]
+Label=Year Completed / Doing
+Name=A23D_YEAR_COMP_VS1
+Value=0:7
+Value=' ';N/A
+Name=NOTAPPL,Special
+
+[Item]
+Label=Subject of Training Description
+Name=A24_SUB_TRAINING1
+Start=110
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Subject of Training
+Name=A24B_SUB_TRAINING
+Start=140
+Len=3
+
+[ValueSet]
+Label=Subject of Training
+Name=A24B_SUB_TRAINING_VS1
+Value=11;Basic General Programs, Pre-primary
+Value=12;Elementary
+Value=13;Primary Teachers Training Programs
+Value=14;Secondary Teachers Training Programs
+Value=19;Other Basic Programs NEC
+Value=81;Simple and Functional Literacy
+Value=82;Numeracy Programs
+Value=89;Other Literacy and Numeracy Programs NEC
+Value=91;Enhancing Personal Skills and Behavioral Capacities,
+Value=92;Mental Skills
+Value=93;Personal Organizational Capacities,
+Value=94;Life Orientation Programs
+Value=99;Other Personal Development Programs NEC
+Value=141;Teacher Training for Pre-school, Kindergarten, Elementary School
+Value=142;Vocational and Practical Teachers Training Programs
+Value=143;Non-Vocational Subjects
+Value=144;Adult Education Courses
+Value=145;Teachers Trainers and For Handicapped Children
+Value=146;General and Specialized Teacher-Training Programs.
+Value=147;Curriculum Development in Non-Vocational and Vocational Subjects
+Value=148;Educational Assessment, Testing and Measurement,
+Value=149;Educational Research and Other Education Science Programs NEC
+Value=211;Fine Arts:
+Value=212;Performing Arts: Music, Drama, Dance and Circus
+Value=213;Graphic and Audio-Visual Arts:
+Value=214;Cinematography
+Value=215;Radio and Television Production
+Value=216;Printing and Publishing
+Value=217;Design and Craft Skills, including Jewellery Making Courses
+Value=218;Spinning and weaving Handcrafts Courses
+Value=219;Other Arts Programs NEC
+Value=221;Religion and Theology
+Value=222;Foreign Languages and Cultures: Living or ‘Dead’ Languages and Their Literature, Area Studies
+Value=223;Native Languages: Current or Vernacular Language and ItsLiterature, eg Setswana
+Value=224;Other Humanities: Interpretation and Translation
+Value=225;Linguistics Courses
+Value=226;Comparative Literature Programs
+Value=227;History Courses Programs
+Value=228;Archaeology Programs
+Value=229;Philosophy Programs
+Value=230;Ethics Programs
+Value=239;Other Humanities Programs NEC
+Value=310;Community Development Programs; Social Welfare/Social WorkPrograms
+Value=311;Economics and Economic History Programs
+Value=312;Political Science and Sociology Programs
+Value=313;Demography Courses
+Value=314;Anthropology (except Physical Anthropology)
+Value=315;Ethnology and Futurology Programs
+Value=316;Psychology Programs
+Value=317;Geography (except Physical Geography)
+Value=318;Peace and Conflict Studies, Human Rights.
+Value=319;Other Social and Behavioural Sciences Programs NEC
+Value=321;Journalism Courses
+Value=322;Library Technician and Science Courses
+Value=323;Technicians in Museums and Similar Repositories, Curatorship andConservation Programs
+Value=324;Documentation Techniques
+Value=325;Archival Sciences.
+Value=326;Radio/Broadcasting Programs
+Value=327;Photography
+Value=328;Film Making Programs
+Value=329;Other Journalism and Information Programs NEC
+Value=341;Retailing Programs
+Value=342;Marketing and Sales Programs
+Value=343;Public Relations Programs
+Value=344;Real Estate Programs
+Value=345;Finance and Banking Programs;
+Value=346;Accounting, Auditing and Bookkeeping Programs
+Value=347;Management and Public Administration Programs,
+Value=348;Secretarial and Office Work Programs.
+Value=351;Insurance and Investment Analysis Programs
+Value=352;Institutional Administration Programs
+Value=353;Personnel Administration Programs;
+Value=354;Manpower Planning Programs
+Value=355;Financial Management Programs
+Value=356;Business\Commercial Administration Programs
+Value=357;Materials Management Courses
+Value=358
+Value=359;Other Business and Administration Programs NEC
+Value=381;Local magistrates, ‘notaries’.)
+Value=382;Law (General, International, Labour, Maritime Law etc.) Programs
+Value=383;Jurisprudence Programs
+Value=384;History of Law Programs.
+Value=389;Other Law Programs NEC
+Value=421;Biology, Botany, Bacteriology, Microbiology and Genetics Program
+Value=422;Toxicology Programs
+Value=423;Zoology Programs
+Value=424;Entomology Programs
+Value=425;Biophysics Programs
+Value=426;Ornithology Programs
+Value=427;Biochemistry Programs
+Value=429;Other Allied Sciences, excluding Clinical and Veterinary Sciences Programs NEC
+Value=441;Astronomy and Space Sciences Programs
+Value=442;Physics and Other Allied Subjects Programs
+Value=443;Chemistry and Other Allied Subjects Programs
+Value=444;Geology and Geophysics Programs
+Value=445;Mineralogy Programs
+Value=446;Physical Anthropology Programs
+Value=447;Physical Geography and Other Geoscience Programs
+Value=449;Other Physical Sciences Programs NEC
+Value=451;Meteorology and Other Atmospheric Sciences including ClimaticResearch Programs
+Value=452;Marine Science Programs
+Value=453;Volcanology Programs
+Value=454;Paleoecology Programs
+Value=459;Other Physical Sciences Programs NEC
+Value=461;Mathematics and Numerical Analysis Programs
+Value=462;Operations Research Programs
+Value=463;Actuarial Science Programs
+Value=464;Statistics and Other Allied Fields Programs.
+Value=469;Other Mathematics and Statistics Programs NEC
+Value=481;Computer Sciences: System Design Programs
+Value=482;Computer Programming Programs
+Value=483;Data Processing Programs
+Value=484;Networks and Website Development Programs
+Value=485;Operating Systems – Software Development Programs Only
+Value=489;Other Computing Programs NEC
+Value=521;Engineering Drawing Programs
+Value=522;Mechanics Engineering Programs
+Value=523;Mining and Metallurgy Programs
+Value=524;Electrical Engineering Programs
+Value=525;Electronics and Telecommunications (Radio and Computer) Programs
+Value=526;Energy and Chemical Engineering Programs (Water)
+Value=527;Vehicle Maintenance Programs
+Value=528;Surveying Programs, Quantity Surveying Programs
+Value=529;Other Engineering and Engineering Trades NEC
+Value=541;Food and Drink Processing Programs
+Value=542;Textiles and Clothes Programs (Tailoring, Textile Trades, Pattern Making etc.)
+Value=543;Footwear and Leather Works Programs
+Value=544;Wood and Paper Training Programs
+Value=545;Plastics Programs
+Value=546;Glass Programs
+Value=547;Chemicals Programs
+Value=548;Mining and Extraction Programs
+Value=549;Other Manufacturing and Processing Programs NEC
+Value=551;Pattern Making Training
+Value=552;Fitter/Joinery Programs
+Value=553;Machine Tool Repair/Fitting
+Value=554;Welding and Fabrication Programs
+Value=555;Blacksmith Courses
+Value=556;Refrigeration and Air Conditioning Training Programs
+Value=557;Motor Mechanics Programs
+Value=558;Diamond Cutting/Polishing/Valuing Courses
+Value=559;Other Industrial Programs NEC
+Value=581;Architecture and Town Planning Programs
+Value=582;Structural Architecture Programs
+Value=583;Landscape  Architecture and Land Management Programs
+Value=584;Community Planning Programs
+Value=585;Cartography Programs
+Value=586;Building and Construction (Valuation) Programs
+Value=587;Civil Engineering Programs
+Value=588;Painting and Songwriting Programs
+Value=589;Other Architecture and Building Programs NEC (e.g. Building Economics, Valuation etc.)
+Value=591;Painting/Songwriting Programs
+Value=592;Carpentry/Joinery Programs
+Value=593;Masonry and Bricklaying Programs
+Value=594;Plumbing
+Value=595;Electrical Programs
+Value=596;Sheet Metal Programs
+Value=597;Drafting Courses
+Value=599;Other Building and Construction Trades Programs NEC
+Value=621;Crop
+Value=622;Livestock
+Value=623;Agronomy Programs,
+Value=634;Animal Husbandry Programs
+Value=625;Horticulture and Gardening Programs
+Value=626;Forestry and Forest Product Techniques Programs
+Value=627;Natural Parks and Wildlife Programs
+Value=628;Fisheries, Fishery Science and Related Technology Programs.
+Value=631;Irrigation Programs
+Value=632;Crop Protection Programs
+Value=633;Range and Pasture Management Programs
+Value=634;Soil Science Programs
+Value=635;Agricultural Engineering Programs
+Value=636;Aeronautical Engineering Programs
+Value=637;Food Research Programs
+Value=639;Other Agriculture, Forestry and Fishery Programs NEC e.g. Bee Keeping
+Value=641;Veterinary Medicine Programs
+Value=642;Veterinary Assisting Programs.
+Value=649;Other Veterinary Services Programs NEC
+Value=710;Paramedical Training Programs
+Value=711;Anatomy and Epidemiology Programs
+Value=712;Anesthesiology Programs
+Value=713;Pediatrics Programs
+Value=714;Surgery, Neurology Programs
+Value=715;Psychiatry, Radiology and Ophthalmology Programs
+Value=716;Public Health Services, Hygiene Programs and Sanitation Programs
+Value=717;Pharmacy and Pharmacology Programs
+Value=718;Therapeutics, Physiotherapy, Rehabilitation, Prosthetics andOptometry Programs
+Value=719;Other Dental Assisting, Dental Hygienist; Dental LaboratoryTechnician, Odontology Programs
+Value=720;Laboratory Technician (Medical) Programs
+Value=721;Nutrition Programs
+Value=722;Obstetrics and Gynaecology Programs
+Value=723;Cytology Programs
+Value=724;Physiology Programs
+Value=725;Immunology and Immunohematology, Programs
+Value=726;Pathology Programs
+Value=727;Basic Nursing Programs
+Value=728;Midwifery Programs
+Value=729;Other Health Programs NEC
+Value=761;Care of the People Living With Disability Production Programs
+Value=762;Childcare Programs
+Value=763;Youth Services Programs
+Value=764;Gerontological Services Programs
+Value=765;Counseling Programs
+Value=769;Social Services Programs Not Elsewhere Classified
+Value=811;Hotel and Catering Programs
+Value=812;Travel and Tourism Programs
+Value=813;Sports and Leisure Programs
+Value=814;Hairdressing Programs
+Value=815;Beauty Treatment and Other Personal Services Programs
+Value=816;Cleaning, Laundry and Dry-Cleaning Services Programs
+Value=817;Cosmetic Services Programs
+Value=818;Domestic Science Programs.
+Value=819;Other Personal Services Programs NEC
+Value=841;Seamanship, Ship’s Officer
+Value=842;Nautical Science Programs
+Value=843;Air Crew and Air Traffic Control Programs
+Value=844;Railway Operations Programs
+Value=845;Road Motor Vehicle Operations Programs (Including Driving Skills)
+Value=846;Postal Services Programs
+Value=847;Telecommunications Operations Programs
+Value=849;Other Transport Programs NEC
+Value=851;Environmental Conservation Programs
+Value=852;Control and Protection Programs
+Value=853;Air and Water Pollution Control Programs
+Value=854;Labour Protection and Security Programs
+Value=859;Other Environmental Protection Programs NEC
+Value=861;Police Work and Related Law Enforcement (Including Prisons)
+Value=862;Criminology Programs
+Value=863;Fire-Protection and Fire Fighting Programs
+Value=864;Civil Security Programs
+Value=865;Military Programs
+Value=869;Other Security Services Programs NEC
+Value=999;Fields of Education Not Known or Unspecified
+
+[Item]
+Label=Religion
+Name=A25_RELIGION
+Start=143
+Len=1
+
+[ValueSet]
+Label=Religion
+Name=A25_RELIGION_VS1
+Value=1;Christian
+Value=2;Muslim
+Value=3;Bahai
+Value=4;Hindu
+Value=5;Badimo
+Value=6;No Religion
+Value=7;Rastafarians
+Value=8;Other (Specify)
+
+[Item]
+Label=Other Religion (Specify)
+Name=A25B_OTHER_RELIGION
+Start=144
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Marital Status
+Name=A26_MARITAL_STATUS
+Start=174
+Len=1
+
+[ValueSet]
+Label=Marital Status
+Name=A26_MARITAL_STATUS_VS1
+Value=1;Married
+Value=2;Never married
+Value=3;Living Together
+Value=4;Separated
+Value=5;Divorced
+Value=6;Widowed
+Value=' ';NA
+Name=NOTAPPL,Special
+
+[Item]
+Label=Age at First Marriage
+Name=A27_AGE_1ST_MARRIAGE
+Start=175
+Len=2
+
+[ValueSet]
+Label=Age at First Marriage
+Name=A27_AGE_1ST_MARRIAGE_VS1
+Value=10:99
+Value='  ';NA
+Name=NOTAPPL,Special
+
+[Item]
+Label=Duration of Marriage
+Name=A28_DURATION
+Start=177
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Mainly doing past seven days
+Name=A29_MAIN_SEVEN_DAYS
+Start=179
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Mainly doing past seven days
+Name=A29_MAIN_SEVEN_DAYS_VS1
+Value=1;Yes
+Value=2;No
+Value=' ';N/A
+Name=NOTAPPL,Special
+
+[Item]
+Label=Since not working what did he/she do?
+Name=A30_ACTIVITY_DONE
+Start=180
+Len=1
+
+[ValueSet]
+Label=Since not working what did he/she do?
+Name=A30_ACTIVITY_DONE_VS1
+Value=1;Actively Seeking Work
+Value=2;House Work
+Value=3;Student
+Value=4;Retired
+Value=5;Sick
+Value=6;Other (Specify)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Worked as (Other Specify)
+Name=A30B_OTHER_SPECIFY
+Start=181
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Working as during past seven days
+Name=A31_WORKED_AS
+Start=211
+Len=1
+
+[ValueSet]
+Label=Working as during past seven days
+Name=A31_WORKED_AS_VS1
+Value=1;Employee - Paid Cash
+Value=2;Employee - Paid in Kind
+Value=3;Self-employed (no employees)
+Value=4;Self-employed (With Employees)
+Value=5;Member Producer Corporatives
+Value=6;Apprentice
+Value=7;Volunteer / Tirelo Sechaba / Intern
+Value=8;Unpaid family helper in family business
+Value=9;Working at own agricultural activities (lands/cattle-posts)
+
+[Item]
+Label=Main Agricultural activities engaged in
+Name=A32_AGRI_ACTIVITIES
+Start=212
+Len=1
+
+[ValueSet]
+Label=Main Agricultural activities engaged in
+Name=A32_AGRI_ACTIVITIES_VS1
+Value=1;Crop Production
+Value=2;Livestock Care
+Value=3;Fishing
+Value=4;Tree Farming
+Value=5;Making goods for household use
+
+[Item]
+Label=Main Purpose of Products Obtained
+Name=A33_PRODUCTS_OBTAINED
+Start=213
+Len=1
+
+[ValueSet]
+Label=Main Purpose of Products Obtained
+Name=A33_PRODUCTS_OBTAINED_VS1
+Value=1;Only for sale or / barter
+Value=2;Mainly for sale / barter, but some of househoold use
+Value=3;Mainly for household use, but some for sale / barter
+Value=4;Only for household use
+
+[Item]
+Label=Occupation (Use two or more words to describe the occupation)
+Name=A34_OCCUPATION1
+Start=214
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Occupation Code
+Name=A34B_OCCUPATION
+Start=244
+Len=4
+
+[ValueSet]
+Label=Occupation Code
+Name=A34B_OCCUPATION_VS1
+Value=110;Commissioned Armed Force Officers
+Value=210;Non-Commissioned Armed Forcees Officers
+Value=310;Armed Forces Occupations, Other Ranks
+Value=1111;Legislators(e.g Members of Parliament)
+Value=1112;Senior Government Officials
+Value=1113;Traditional chiefs & Heads of villages
+Value=1114;Senior administrators of special- interest organisations
+Value=1120;Managing Directors & chief executives
+Value=1211;Finance Managers
+Value=1212;Human Resource Managers
+Value=1213;Policy & Planning Managers
+Value=1219;Business Services & Administration Managers (NEC)
+Value=1221;Sales & Marketing Managers
+Value=1222;Advertising & Public Relations Managers
+Value=1223;Research & Development Managers
+Value=1224;Small Business Managers (S)
+Value=1311;Agric & Forestry Production Managers
+Value=1312;Agric & Fisheries Production Managers
+Value=1321;Manufacturing Managers
+Value=1322;Mining Managers
+Value=1323;Construction Managers
+Value=1324;Supply, Distribution & Related Managers
+Value=1330;Information & Communications Technology Services Managers
+Value=1341;Child Care Services Managers
+Value=1342;Health Services Managers
+Value=1343;Aged Care Services Managers
+Value=1344;Social Welfare Managers
+Value=1345;Education Managers
+Value=1346;Financial & Insurance Services Branch Managers
+Value=1349;Professional Services Managers (NEC)
+Value=1411;Hotel Managers
+Value=1412;Resturant Managers
+Value=1420;Retail & wholesale Trade Managers
+Value=1431;Sports, Recreation & Cultural Centre Managers
+Value=1439;Other Services Managers (NEC)
+Value=2111;Phycists & Atronomers
+Value=2112;Metereologists
+Value=2113;Chemists
+Value=2114;Geologists & Geophysicists
+Value=2120;Mathematicians, Actuaries & Statisticians
+Value=2131;Biologists, Botanists, Zoologists & Related Professionals
+Value=2132;Farming, Forestry & Fishery Advisors
+Value=2133;Enviromental Protection Professionals
+Value=2141;Industrial & Production Engineers
+Value=2142;Civil Engineers
+Value=2143;Enviromental Engineers
+Value=2144;Mechanical Engineers
+Value=2145;Chemical Engineers
+Value=2146;Mining Engineers, Metallurgists & Related Professionals
+Value=2149;Engineering Professionals (NEC)
+Value=2151;Electrical Engineers
+Value=2152;Electronics Engineers
+Value=2153;Telecomunications Engineers
+Value=2161;Building Architects
+Value=2162;Landscape Architects
+Value=2163;Product & Garment Designers
+Value=2164;Town & Traffic Planners
+Value=2165;Cartographers & Surveyors
+Value=2166;Graphic & Multi Media Designers
+Value=2211;Generalist Medical Practioners
+Value=2212;Specialist Medical Practitioners
+Value=2221;Nursing Professionals
+Value=2222;Midwifery Professionals
+Value=2230;Traditional & Complementary Medicine Professionals
+Value=2240;Paramedical Practitioners
+Value=2240;Veterinarians
+Value=2261;Dentists
+Value=2262;Pharmasists
+Value=2263;Enviromental & Occupational Health & Hygiene Professionals
+Value=2264;Physiotherapists
+Value=2265;Dieticians & Nutritionists
+Value=2266;Audiologists & Speech Therapists
+Value=2267;Optometrists & Ophthalmic Opticians
+Value=2269;Other Health Professsionals (NEC)
+Value=2310;University & Higher Education Teachers
+Value=2320;Vocational & Technical Education Teachers
+Value=2330;Secondary Education Teachers
+Value=2341;Primary School Teachers
+Value=2342;Early Childhood Educators
+Value=2351;Education Methods Specialists
+Value=2352;Special Needs Teachers
+Value=2353;Other Language Teachers
+Value=2354;Other Music Teachers
+Value=2355;Other Arts Teachers
+Value=2356;Information Technology Teachers
+Value=2359;Other Teaching Profesionals (NEC)
+Value=2411;Accountants
+Value=2412;Financial & Investments Advisors
+Value=2413;Financial Analysts
+Value=2421;Management & Organisation Analysts
+Value=2422;Policy Administration Professionals
+Value=2423;Personnel & Careers Professionals
+Value=2424;Training & Staff Development Professionals
+Value=2431;Advertising & Marketing Professionals
+Value=2432;Public Relations Professionals
+Value=2433;Technical & Medical Sales Professionals(Exc.ICT)
+Value=2434;Information & Communication Tecnology Sales Professionals
+Value=2511;Systems Analysts
+Value=2512;Software Developers
+Value=2513;Web & Multimedia Developers
+Value=2514;Applications Programmers
+Value=2519;Sotfware & Applications Developers & Analysts(NEC)
+Value=2521;Database Designers & Administrators
+Value=2522;Systems Administrators
+Value=2523;Computer Network Professionals
+Value=2529;Database & Network Professionals (NEC)
+Value=2611;Lawyers
+Value=2612;Judges
+Value=2619;Legal Professionals (NEC)
+Value=2621;Archivists & Curators
+Value=2622;Librarians & Related Information Professionals
+Value=2631;Economists
+Value=2632;Sociologists, Anthropologists, & Related Professionals
+Value=2633;Philosophers, Historians & Political Scientists
+Value=2634;Psychologists
+Value=2635;Social Work & Counseling Professionals
+Value=2636;Religious Professionals
+Value=2641;Authors & Related Writers
+Value=2642;Journalists
+Value=2643;Translators, Interpreters & Other Lunguists
+Value=2651;Visual Artists
+Value=2652;Musicians, Singers & Composers
+Value=2653;Dancers & Choreographers
+Value=2654;Film, Stage & Related Directors & Producers
+Value=2655;Actors
+Value=2656;Announcers on Radio, Television & Other Media
+Value=2659;Creative & Performing Artists (NEC)
+Value=3111;Chemical & Physical Science Technicians
+Value=3112;Civil Engineering Technicians
+Value=3113;Electrical Engineering Technicians
+Value=3114;Electronics Engineering Technicians
+Value=3115;Mechanical Engineering Technicians
+Value=3116;Chemical Engineering Technicians
+Value=3117;Mining & Metallurgical Technicians
+Value=3118;Draughts-Persons
+Value=3119;Physical & Engineering Science Technicians (NEC)
+Value=3121;Mining Supervisors
+Value=3122;Manufacturing Supervisors
+Value=3123;Construction Supervisors
+Value=3131;Power Production Plant Operators
+Value=3132;Incinerator & Water Treatment Plant Operators
+Value=3133;Chemical Processing Plant Operators
+Value=3134;Petroleum and Natural Gas Refining Plant Operators
+Value=3135;Metal Production Process Controllers
+Value=3139;Process Control Technicians (NEC)
+Value=3141;Life Science Technicians (excluding medical)
+Value=3142;Agricultural Technicians
+Value=3143;Forestry Technicians
+Value=3153;Aircraft Pilots and Related Associate Professionals
+Value=3154;Airtraffic Controllers
+Value=3155;Air Traffic Safety Electronics Technicians
+Value=3211;Medical Imaging and Therapeutic Equipment Technicians
+Value=3212;Medical and Pathology Laboratory Technicians
+Value=3213;Pharmaceutical Technicians and Assistants
+Value=3214;Medical Dental Prosthetic Technicians
+Value=3221;Nursing Associate Professionals
+Value=3222;Midwifery Associate Professionals
+Value=3230;Traditional and Complementary Medicine Associate Professionals
+Value=3240;Veterinary Technicians and Assistants
+Value=3251;Dental Assistants and Therapists
+Value=3252;Medical Records and Health Information Technicians
+Value=3253;Community Health Workers
+Value=3254;Dispensing Opticians
+Value=3255;Physiotherapy Techinicians and Assistants
+Value=3256;Medical Assistants
+Value=3257;Enviromental and Occupational Health Inspectors and Associates
+Value=3258;Ambulance Workers
+Value=3259;Health Associate Professionals (NEC)
+Value=3311;Securities and finance Dealers and Brokers
+Value=3312;Credit and Loans Officers
+Value=3313;Accounting Associate Professionals
+Value=3314;Statistical, Mathematical and Related Associate Professionals
+Value=3315;Valuers and Loss Assessors
+Value=3321;Insurance Representatives
+Value=3322;Commercial Sales Represntatives
+Value=3323;Buyers
+Value=3324;Trade Brokers
+Value=3331;Clearing and Forwarding Agents
+Value=3332;Conference and Event Planners
+Value=3333;Employment Agents and Contractors
+Value=3334;Real Eastate Agents and Property Managers
+Value=3339;Business Services Agents (NEC)
+Value=3341;Office Supervisors
+Value=3342;Legal Secretaries
+Value=3343;Administrative and Excutive Secretaries
+Value=3344;Medical Secretaries
+Value=3351;Customs and Border Inspectors
+Value=3352;Government Tax and Excise Officials
+Value=3353;Government Social Benefits Officials
+Value=3354;Government Licensing Officials
+Value=3355;Police Inspectors and Detectives
+Value=3359;Government Regulatory Associate Professionals (NEC)
+Value=3411;Legal and Related Associate Professionals
+Value=3412;Social Work Associate Professionals
+Value=3413;Religious Associate Professionals
+Value=3432;Interior Designers and Decorators
+Value=3433;Gallery, Museums and Library Technicians
+Value=3434;Chefs
+Value=3435;Other Artistic and Cultural Associate Professionals
+Value=3511;Information and Communications Technology Operations Technicians
+Value=3512;Information and Communications Technology User Support Technicians
+Value=3513;Computor Network and Systems Technicians
+Value=3514;Web Technicians
+Value=3521;Broadcasting and Audio Visual Technicians
+Value=3522;Telecommunications Engineering Technicians
+Value=3611;Primary Education Teachers
+Value=3621;Pre-Primary Education Teachers
+Value=3631;Vocational and Technical Education Teachers
+Value=3691;Primary, Pre-Primary, Vocational and Technical Education Teachers (NEC)
+Value=4110;General Office Clerks
+Value=4120;Secretaries (General)
+Value=4131;Typists and Word Processing Operators
+Value=4132;Data Entry Operators or Clerks
+Value=4211;Bank Tellers and Related Clerks
+Value=4212;Bookmakers, Croupiers and Related Gaming Workers
+Value=4213;Pawn Brokers and Money Lenders
+Value=4214;Debt Collectors and Related Workers
+Value=4221;Travel Consultants and Clerks
+Value=4222;Contact Center Information Clerks
+Value=4223;Telephone Switchboard Operators
+Value=4224;Hotel Receptionists
+Value=4225;Inquiry Clerks
+Value=4226;Receptionists (General)
+Value=4227;Survey and Market Research Interviewers
+Value=4229;Client Information Workers (NEC)
+Value=4311;Accounting and Bookkeeping Clerks
+Value=4312;Statistical, Insurance and Finance Clerks
+Value=4313;Payroll Clerks
+Value=4321;Stock Clerks
+Value=4322;Production Clerks
+Value=4323;Transport Clerks
+Value=4411;Library Clerks
+Value=4412;Mail Carriers and Sorting Clerks
+Value=4413;Coding, Proof-Reading and Related Clerks
+Value=4414;Sribes and Related Clerks
+Value=4415;Filing and Copying Clerks
+Value=4416;Personnel Clerks
+Value=4419;Other Clerical Support Workers (NEC)
+Value=5111;Travel Attendants and Travel Stewards
+Value=5112;Transport Conductors
+Value=5113;Travel Guides
+Value=5120;Cooks
+Value=5131;Waiters
+Value=5132;Bartenders
+Value=5141;Hairdressers
+Value=5142;Beauticians and Related Workers
+Value=5151;Cleaning and Housekeeping Supervisors in Offices, Hotels and other Establishments
+Value=5152;Domestic Housekeepers
+Value=5153;Building Caretakers
+Value=5161;Astrologers, Fortune Tellers and Related Workers
+Value=5162;Companions and Valets
+Value=5163;Undertakers, Embalmers and Related Workers
+Value=5164;Pet Groomers and Other Related Workers
+Value=5165;Driving Instructors
+Value=5169;Personal Services Workers (NEC)
+Value=5211;Stall and Market Salespersons
+Value=5212;Street Food Salespersons
+Value=5221;Shopkeepers
+Value=5222;Shop Supervisors
+Value=5223;Shop Sales Assistants
+Value=5230;Cashiers and Ticket Clerks
+Value=5241;Fashion and Other models
+Value=5242;Sales Demonstrators
+Value=5243;Door-Door Hawkers and Salespersons
+Value=5244;Contact Centre Salespersons
+Value=5245;Service Station / Petrol Attendants
+Value=5246;Food Service Counter Attendants
+Value=5249;Other Salespersons / Workers (NEC)
+Value=5311;Child Care Workers
+Value=5312;Teachers Aides
+Value=5321;Health Care Assistants
+Value=5322;Home Based Care Personal Care Workers
+Value=5329;Personal Care Workers in Health Services (NEC)
+Value=5411;Fire Fighters
+Value=5412;Police Officers
+Value=5413;Prison Guards
+Value=5414;Security Guards
+Value=5419;Protective Services Workers (NEC)
+Value=6111;Field Crop and Vegetable Growers
+Value=6112;Tree and Srub Crop Growers
+Value=6113;Gardners, Horticultural and Nursery Growers
+Value=6114;Mixed Crop Growers
+Value=6121;Livestock and Dairy Producers
+Value=6122;Poultry Producers
+Value=6123;Apiarists and Seri-culturists
+Value=6129;Animal Producers (NEC)
+Value=6130;Mixed Crop and Animal Producers
+Value=6210;Forestry and Related Workers
+Value=6221;Aquaculture Workers
+Value=6222;Inland and Coastal Waters Fishery Workers
+Value=6224;Hunters and Trappers
+Value=6310;Subsistence Crop Farmers
+Value=6320;Subsistence Livestock Farmers
+Value=6330;Subsistence Mixed Crop & Livestock Farmers
+Value=6340;Subsistence Hunters, Fishers, Trappers and Gatherers
+Value=7111;House Builders
+Value=7112;Bricklayers and Related Workers
+Value=7113;Stonemasons, Stone Cutters, Splitters abd Carvers
+Value=7114;Concrete Placers, Concrete Finishers and Related Workers
+Value=7115;Carpenters and Joiners
+Value=7119;Building Frame and Related Trades (NEC)
+Value=7121;Roofers
+Value=7122;Floor Layers and Tile Setters
+Value=7123;Plasterers
+Value=7124;Insulation Workers
+Value=7125;Glaziers
+Value=7126;Plumbers and Pipe Fitters
+Value=7127;Air Conditioning and Refrigeration Mechanics
+Value=7131;Painters and Related Workers
+Value=7132;Spray Painters and Vanishers
+Value=7133;Building Structure Cleaners
+Value=7211;Metal Moulders and Core Makers
+Value=7212;Welders and Flame-Cutters
+Value=7213;Sheet Metal Workers
+Value=7214;Structural Metal Preparers and Erectors
+Value=7215;Riggers and Cable Splicers
+Value=7221;Blacksmiths, Hammersmith and Forging Press Workers
+Value=7222;Tool Makersand Related Workers
+Value=7223;Metal Working Machine Tool Setters and Operators
+Value=7224;Metal Polishers, Wheel Grinders and Tool Sharpeners
+Value=7231;Motor Vehicle Mechanics and Repairers
+Value=7232;Aircraft Engine Mechenics and Repairers
+Value=7233;Agriultural and Industrial Machinery Mechenics and Repairers
+Value=7234;Bicycle and Related Repairers
+Value=7311;Precision-Instrument Makers and Repairers
+Value=7312;Musical Instrument Makers and Tuners
+Value=7313;Jewellery and Precious Metal Workers
+Value=7314;Potters and Related Workers
+Value=7315;Glass Makers, Cutters, Grinders and Finishers
+Value=7316;Sign-Writters, Decorative Painters, Engravers and Etchers
+Value=7317;Handicraft Workers in Wood, Basketry and Related Materials
+Value=7318;Handicraft Workers in Textile, Leather and Related Materials
+Value=7319;Handicraft Workers (NEC)
+Value=7321;Pre-Press Technicians
+Value=7322;Printers
+Value=7323;Print Finishing and Binding Workers
+Value=7411;Building and Related Electricians
+Value=7412;Electrical Mechanics and Fitters
+Value=7413;Electrical Line Installers and Repairers
+Value=7421;Electronics Mechanics and Servicers
+Value=7422;Information and Communications technology Installers and Servicers
+Value=7511;Butchers, Fishmongers and Related Food Preparers
+Value=7512;Bakers, Pastry Cooks and Confectionery Makers
+Value=7513;Dairy Products Makers
+Value=7514;Fruits and Vegetables Preservers
+Value=7515;Food and Beverage Makers, Tasters and Graders
+Value=7516;Tobacco Preparers and Tobacco Products Makers
+Value=7521;Wood Treaters
+Value=7522;Cabinet  Makers and Related Trades Workers
+Value=7523;Woodworking Machine Tool Setters and Operators
+Value=753;Garment and Related Trades Workers
+Value=7531;Tailors, Dressmakers, Furriers and Hatters
+Value=7532;Garment and Related Patternmakers and Cutters
+Value=7533;Sewing, Embroidery and Related Trades Workers
+Value=7534;Upholstery and Related Trades Workers
+Value=7535;Pelt Dressers, Tanners and Fell-Mongers
+Value=7536;Shoemakers and Related Trades Workers
+Value=7541;Under Water Drivers
+Value=7542;Shot Fierers and Blasters
+Value=7543;Product Graders and Testers
+Value=7544;Furnigaters  and Other Pest and Weed Controller
+Value=7549;Craft and Related Trades Workers (NEC)
+Value=8111;Miners Quarriers
+Value=8112;Mineral and Stone Processing Plant Operators
+Value=8113;Well Drillers and Borers
+Value=8114;Cement, Stone, Glass, Ceramic and Ohter Mineral Products Machine Operators
+Value=8121;Metal Processing Plant Operators
+Value=8122;Metal Finishing Plant Operators
+Value=813;Chemical and Photographic Products Plant and Machine Operators
+Value=8131;Chemical Products Plant and Machine Operators
+Value=8132;Photographic Products Plant and machine Operators
+Value=8141;Rubber Products Machine Operators
+Value=8142;Plastic Products Machine Operators
+Value=8143;Paper Products Machine Operators
+Value=8151;Fibre Preparing, Spinning and Winding Machine Operators
+Value=8152;Weaving and Knitting Machine Operators
+Value=8153;Sewing Machine Operators
+Value=8154;Bleaching, Dyeing and Fabric Cleaning Machine Operators
+Value=8155;Fur and Leather Preparing Machine Operators
+Value=8156;Shoemaking and Related Machine Operators
+Value=8157;Laundry Machine Operators
+Value=8159;Textile, Fur and Leather Products Machine Operators (NEC)
+Value=8160;Food and Related Products Machine Operators
+Value=8171;Pulp and Papermaking Plant Operators
+Value=8172;Wood Processing Plant Operators
+Value=8181;Glass and Ceramics Plant and Machine Operators
+Value=8182;Steam Engine and Boiler Operators
+Value=8183;Packaging, Bottling and Labeling machine Operators
+Value=8189;Other Stionery Plant and Machine Operators (NEC)
+Value=8211;Mechanical Machinery Assemblers
+Value=8212;Electrical and Electronic Equipment Assemblers
+Value=8219;Other Plant and Machine Assemblers (NEC)
+Value=8311;Locomotive Engine Drivers
+Value=8312;Railway Brakes, Signal, Shatter and Switch Operators
+Value=8321;Motorcycle Drivers
+Value=8322;Car, Taxi, Van Drivers
+Value=8331;Bus Truck and Tram Drivers
+Value=8332;Heavy Truck and Lorry Drivers
+Value=8341;Mobile Farm and Forestry Plant Operators
+Value=8342;Earthmoving and related Plant Operators
+Value=8343;Crane, Hoist and Related Plant Operators
+Value=8344;Lifting- Truck Operators
+Value=9111;Domestic Cleaners and Helpers
+Value=9112;Cleaners and Helpers Offices, Hotels and Other Establishments
+Value=9121;Hand Launderers and Pressers
+Value=9122;Vehicle Cleaners
+Value=9123;Window Cleaners
+Value=9129;Other Cleaning Workers (NEC)
+Value=9211;Crop Farm Labourers
+Value=9212;Livestock Farm Labourers incl. Herders
+Value=9213;Mixed Crop & Livestock Farm Labourers
+Value=9214;Garden and Horticultural Labourers
+Value=9215;Forestry Labourers
+Value=9216;Fishery, Quaculture, Hunting and Trapping Labourers
+Value=9311;Mining and Quarrying Labourers
+Value=9312;Civil Engineering Labourers
+Value=9313;Building Construction and Maintenance Labourers
+Value=9321;Hand packers
+Value=9329;Other Manufacturing Labourers (NEC)
+Value=9331;Hand and Pedal Vehicle Drivers
+Value=9332;Drivers of Animal Drawn Vehicles
+Value=9333;Freight Hanlders
+Value=9334;Shelf Fitters
+Value=9411;Fast Food Preparers
+Value=9412;Kitchen Helpers
+Value=9510;Street and Related Sales and Services Workers
+Value=9520;Street vendors (exc. Food)
+Value=9611;Garbage and Recycling Collectors
+Value=9612;Refuse Sorters
+Value=9613;Street Sweepers and Related Workers / Labourers
+Value=9621;Messengers, Packager Deliverers, Luggage Porters and Carriers
+Value=9622;Odd-Job Person
+Value=9623;Vending Machine Money Collectors, Meter Readers and Other Related Workers
+Value=9624;Water Carriers and Related Labourers
+Value=9629;Elementery Workers (NEC)
+Value=9999;Occupation Not Stated or Not Classifiable
+Value='    ';NA
+Name=NOTAPPL,Special
+
+[Item]
+Label=Main Workplace describe  Product/Service/ Activity ( Industry)
+Name=A35_INDUSTRY1
+Start=248
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Industry Code
+Name=A35B_INDUSTRY
+Start=278
+Len=4
+
+[ValueSet]
+Label=Industry Code
+Name=A35B_INDUSTRY_VS1
+Value=111;Growing of Cereals (except Rice) Leguminous Crops and Oil Seeds)
+Value=112;Growing of Rice
+Value=113;Growing of Vegetables and Melons, Roots and Tubers
+Value=114;Growing of Sugar Cane
+Value=115;Growing of Tobacco
+Value=116;Growing of Fibre Crops
+Value=119;Growing of Other Non-perennial Crops
+Value=121;Growing of Grapes
+Value=122;Growing of Tropical and Subtropical Fruits
+Value=123;Growing of Citrus Fruits
+Value=124;Growing of Pome Fruits and Stone Fruits
+Value=125;Growing of Other Trees and Bush Fruits and Nuts
+Value=126;Growing of Oleaginous fruits
+Value=127;Growing of Beverage Crops
+Value=128;Growing of Spices, Aromatic, Drug and Pharmaceutical Crops
+Value=129;Growing of Other Perennial Crops
+Value=130;Plant Propagation
+Value=141;Raising of Cattle and
+Value=142;Raising of Horse and Other Equines
+Value=143;Raising of Camels and Camelids
+Value=144;Raising of Sheep
+Value=145;Raising of Swine or Pigs
+Value=146;Raising of Poultry
+Value=147;Raising of Goats
+Value=148;Raising of Game
+Value=149;Raising of Other Animals
+Value=150;Mixed Farimg0150
+Value=161;Support Activities to Agriculture to Crop Production
+Value=162;Support Activities to Agriculture to Animal Production
+Value=163;Post-Harvest Crop Activities
+Value=164;Seed Processing for Propagation
+Value=170;Hunting and related Service Activities
+Value=210;Silviculture and other Forestry Activities
+Value=220;Logging
+Value=230;Gathering of Non-wood Forest Products
+Value=240;Support Services to Forestry
+Value=311;Marine Fishing
+Value=312;Fresh Water Fishing
+Value=321;Marine Aquaculture
+Value=322;Fresh Water Aquaculture
+Value=411;Traditional or Subsistence Crop Farming
+Value=412;Growing of Vegetables
+Value=421;Traditional or Subsistence Cattle Farming
+Value=422;Traditional or Subsistence Small Stock Farming
+Value=423;Traditional Poultry Farming
+Value=429;Other Traditional or Subsistence Farming
+Value=430;Mixed Traditional or Subsistence Farming
+Value=510;Mining of Hard Coal
+Value=520;Mining of Lignite
+Value=610;Extraction of Crude Petroleum
+Value=620;Extraction of Natural Gas
+Value=710;Mining of Iron Ores
+Value=722;Mining of Copper/Nickel
+Value=724;Mining of Gold Mining
+Value=731;Mining of Diamonds
+Value=810;Quarrying of Stone, Sand and Clay
+Value=891;Mining of Chemical and Fertilizer Minerals
+Value=892;Extraction of Peat
+Value=894;Extraction of Soda Ash and Salt
+Value=895
+Value=910;Support Activities for Petroleum and Natural Gas Extraction
+Value=990;Support Activities for Other Mining and Quarrying
+Value=1010;Processing and Preserving of Meat
+Value=1020;Processing and Preserving of Fish, Crustaceans and Molluscs
+Value=1030;Processing and Preserving of Fruit and Vegetables
+Value=1040;Manufacture of Vegetables and Animal Oils and Fats
+Value=1050;Manufacture of Dairy Products
+Value=1061;Manufacture of Grain Mill Products
+Value=1062;Manufacture of Starches and Starch Products
+Value=1071;Manufacture of Bakery Products
+Value=1072;Manufacture of Sugar
+Value=1073;Manufacture of Cocoa, Chocolate and Sugar Confectionery
+Value=1074;Manufacture of Macaroni, Noodles, Couscous and Similar Farinaceous Products
+Value=1075;Manufacture of Prepared Meals and Dishes
+Value=1079;Manufacture of Other Food Products NEC
+Value=1080;Manufacture of Prepared Animal Feeds
+Value=1101;Distilling, Rectifying and Blending of Spirits
+Value=1102;Manufacture of Wines
+Value=1103;Manufacture of Malt Liquors and Malt
+Value=1104;Manufacture of Soft Drinks, Production of Mineral Waters and Other Bottled Waters
+Value=1200;Manufacture of Tobacco Products
+Value=1311;Preparation and Spinning of Textile Fibres
+Value=1312;Weaving of Textiles
+Value=1313;Finishing of Textiles
+Value=1391;Manufacture of Knitted and Crocheted Fabrics
+Value=1392;Manufacture of made-up Textile Articles, except Apparel
+Value=1393;Manufacture of Carpets and Rugs
+Value=1394;Manufacture of Cordage, Rope, Twine and Netting
+Value=1399;Manufacture of Other Textiles NEC
+Value=1410;Manufacture of Wearing Apparel, except Fur Apparel
+Value=1420;Manufacture of Articles of Fur
+Value=1430;Manufacture of Knitted and Crocheted Apparel
+Value=1511;Tanning and Dressing of Leather,
+Value=1512;Manufacture of Luggage, Handbags and the Like, Saddlery and Harness
+Value=1520;Manufacture of Footwear
+Value=1610;Sawmilling and Planning of Wood
+Value=1621;Manufacture of Veneer Sheets and Wood-based Panels
+Value=1622;Manufacture of Builders’ Carpentry and Joinery
+Value=1623;Manufacture of Wooden Containers
+Value=1629;Manufacture of Other Products of Wood, Articles of Cork,Straw & Plaiting Materials
+Value=1701;Manufacture of Pulp, Paper and Paperboard
+Value=1702;Manufacture of Corrugated Paper,Paperboard and of Containers of Paper and Paperboard
+Value=1709;Manufacture of Other Articles of Paper and Paperboard
+Value=1811;Printing
+Value=1812;Service Activities Related to Printing
+Value=1820;Reproduction of Recorded Media
+Value=1910;Manufacture of Coke Oven Products
+Value=2011;Manufacture of Basic Chemicals
+Value=2012;Manufacture of Fertilizers and Nitrogen Compounds
+Value=2013;Manufacture of Plastics and Synthetic Rubber in Primary Forms
+Value=2021;Manufacture of Pesticides and Other Agrochemical Products
+Value=2022;Manufacture of Paints, Vanishes and Similar Coatings, Printing Ink and Mastics
+Value=2023;Manufacture of Soaps and Detergents, cleaning and Polishing Preparations,
+Value=2029;Manufacture of Other Chemical Products NEC
+Value=2030;Manufacture of Man-made Fibres
+Value=2100;Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products
+Value=2211;Manufacture/Retreading/ Rebuilding of Rubber Tyres & Tubes;
+Value=2219;Manufacture of Other Rubber Products
+Value=2220;Manufacture of Plastics Products
+Value=2310;Manufacture of Glass and Glass Products
+Value=2391;Manufacture of Refractory Products
+Value=2392;Manufacture of Clay Building Materials
+Value=2393;Manufacture of Other Porcelain and Ceramic Products
+Value=2394;Manufacture of Cement, Lime and Plaster
+Value=2395;Manufacture of Articles of Concrete, Cement and Plaster
+Value=2396;Cutting, Shaping and Finishing of Stone
+Value=2399;Manufacture of Other Non-Metallic Mineral Products NEC
+Value=2410;Manufacture of Basic Iron and Steel
+Value=2420;Manufacture of Basic Precious and Other Non-Ferrous Metals
+Value=2431;Casting of Iron and Steel
+Value=2432;Casting of Non-Ferrous Metals
+Value=2511;Manufacture of Structural Metal Products
+Value=2512;Manufacture of Tanks, Reservoirs and Containers of Metal
+Value=2513;Manufacture of Steam Generators, except Central Heating Hot Water Boilers
+Value=2591;Forging, Pressing, Stamping and Roll-Forming of Metal; Powder Metallurgy
+Value=2592;Treatment and Coating of Metals; Machining
+Value=2593;Manufacture of Cutlery, Hand Tools and General Hardware
+Value=2599;Manufacture of Other Fabricated Metal Products NEC
+Value=2610;Manufacture of Electronic Components and Boards
+Value=2620;Manufacture of Computers and Peripheral Equipment
+Value=2630;Manufacture of Communication Equipment
+Value=2640;Manufacture of Consumer Electronics
+Value=2651;Manufacturing of Measuring, Testing, Navigating and Control Equipment
+Value=2652;Manufacturing of Watches and Clocks
+Value=2660;Manufacture of Irradiation, Electro-medical and Electro-therapeutic Equipment
+Value=2670;Manufacture of Optical Instruments and Photographic Equipment
+Value=2680;Manufacture of Magnetic and Optical Media
+Value=2710;Manufacture of Electric Motors, Generators, Transformers,Electricity Distribution& Control Apparatus
+Value=2720;Manufacture of Batteries and Accumulators
+Value=2731;Manufacture of Fibre Optic Cables
+Value=2732;Manufacture of Other Electronic and Electric Wires and Cables
+Value=2733;Manufacture of Wiring Devices
+Value=2740;Manufacture of Electric Lighting Equipment
+Value=2750;Manufacture of Domestic Appliances
+Value=2790;Manufacture of Other Electrical Equipment
+Value=2811;Manufacture of Engines & Turbines, except Aircraft, Vehicle and Cycle Engines
+Value=2812;Manufacture of Fluid Power Equipment
+Value=2813;Manufacture of Other Pumps, Compressors, Taps and Valves
+Value=2814;Manufacture of Bearings, Gears, Gearing and Driving Elements
+Value=2815;Manufacture of Ovens, Furnaces and Furnace Burners
+Value=2816;Manufacture of Lifting and Handling Equipment
+Value=2817;Manufacture of Office Machinery& Equipment,(except Computers & Peripherals)
+Value=2818;Manufacture of Power- Driven Hand Tools
+Value=2819;Manufacture of Other General-Purpose Machinery
+Value=2821;Manufacture of Agricultural and Forestry Machinery
+Value=2822;Manufacture of Metal-Forming Machinery and Machine Tools
+Value=2823;Manufacture of Machinery for Metallurgy
+Value=2824;Manufacture of Machinery for Mining, Quarrying and Construction
+Value=2825;Manufacture of Machinery for Food, Beverages and Tobacco Processing
+Value=2826;Manufacture of Machinery for Textile, Apparel and Leather Production
+Value=2829;Manufacture of Other Special-Purpose Machinery
+Value=2910;Manufacture of Motor Vehicles
+Value=2920;Manufacture of Bodies (Coachwork) for Motor Vehicles, Tailers & Semi-Trailers
+Value=2930;Manufacture of Parts and Accessories for Motor Vehicles
+Value=3012;Building of Pleasure and Sporting Boats
+Value=3091;Manufacture of Motor Cycles
+Value=3092;Manufacture of Bicycles and Invalid Carriers
+Value=3099;Manufacture of Other Transport Equipments NEC
+Value=3100;Manufacture of Furniture
+Value=3211;Manufacture of Jewellery and Related Articles
+Value=3212;Manufacture of Imitation Jewellery and Related Articles
+Value=3213;Diamond Sorting Activities
+Value=3214;Diamond Cutting and Polishing Activities
+Value=3220;Manufacture of Musical Instruments
+Value=3230;Manufacture of Sports Goods
+Value=3240;Manufacture of Games and Toys
+Value=3250;Manufacture of Medical and Dental Instruments and Supplies
+Value=3290;Other Manufacturing NEC
+Value=3311;Repair of Fabricated Metal Products
+Value=3312;Repair of Machinery
+Value=3313;Repair of Electronic and Optical Equipment
+Value=3314;Repair of Electrical Equipment
+Value=3315;Repair of Transport Equipment, except Motor Vehicles
+Value=3319;Repair of Other Equipment
+Value=3320;Installation of Industrial Machinery and Equipment
+Value=3510;Electric Power Generation, Transmission and distribution
+Value=3520;Manufacture of Gas, Distribution of Gaseous Fuels through mains
+Value=3530;Steam and Air Conditioning Supply
+Value=3600;Water Collection, Treatment and Supply
+Value=3700;Sewerage
+Value=3811;Collection of Non-hazardous Waste
+Value=3812;Collection of Hazardous Waste
+Value=3821;Treatment and Disposal of Non-hazardous Waste
+Value=3822;Treatment and Disposal of Hazardous Waste
+Value=3830;Materials Recovery
+Value=4661;Wholesale of Solid, Liquids and Gaseous Fuels and Related Products
+Value=4662;Wholesale of Metals and Metal Ores
+Value=4663;Wholesale of Construction Materials, Hardware, Plumbing and Heating Equipment and Supplies
+Value=4669;Wholesale of Waste and Scrap and Other Products NEC
+Value=4690;Non- Specialised Wholesale Trade Other Specialised Wholesale
+Value=4661;Wholesale of Solid, Liquids and Gaseous Fuels and Related Products
+Value=4662;Wholesale of Metals and Metal Ores
+Value=4663;Wholesale of Construction Materials, Hardware, Plumbing and Heating Equipment and Supplies
+Value=4669;Wholesale of Waste and Scrap and Other Products NEC
+Value=4690;Non- Specialised Wholesale Trade
+Value=4711;Retail Trade in Non-Specialised Stores with Food, Beverages and Tobacco
+Value=4719;Other Retail Trade in Non-Specialised Stores
+Value=4721;Retail Sale of Food in Specialised Stores ,
+Value=4722;Retail Sale of Beverages in Specialised Stores
+Value=4723;Retail Sale of Tobacco in Specialised Stores
+Value=4730;Retail Sale of Automotive Fuel in Specialised Stores
+Value=4741;Retail Sale of Computers, Peripheral Units, Software and Telecommunications
+Value=4742;Retail Sale of Audio and Video Equipment in Specialised Stores
+Value=4751;Retail Sale of Textiles in Specialised Stores
+Value=4752;Retail Sale of Hardware, Paints and Glass in Specialised Stores
+Value=4753;Retail Sale of Carpets, Rugs, Wall and Floor Coverings in Specialised Stores
+Value=4759;Retail Sale of Electrical Household Appliances, Furniture, Lighting Equipment
+Value=4761;Retail Sale of Books, Newspapers and Stationery in Specialised Stores
+Value=4762;Retail Sale of Music and Video Recordings in Specialised Stores
+Value=4763;Retail Sale of Sporting Equipment in Specialised Stores
+Value=4764;Retail Sale of Games and Toys in Specialised Stores
+Value=4771;Retail Sale of Clothing, Footwear and Leather Articles in specialised Stores
+Value=4772;Retail Sale of Pharmaceutical and Medical Goods, Cosmetics and Toilet Articles in Specialised Stores
+Value=4773;Other Retail Sale of New Goods in Specialised Stores
+Value=4774;Retail Sale of Second-Hand Goods
+Value=4781;Retail Sale Via Stalls and Markets of Food, Beverages and Tobacco Products
+Value=4782;Retail Sale Via Stalls and Markets of Textiles, Clothing and Footwear
+Value=4789;Retail Sale Via Stalls and Markets of Other Goods
+Value=4791;Retail Sale of Via Mail Order Houses or Via Internet
+Value=4799;Other Retail Sale Not in Stores, Stalls or Markets
+Value=4911;Passenger Rail Transport, Interurban
+Value=4912;Freight Rail Transport
+Value=4921;Urban and Suburban Passenger Land Transport
+Value=4922;Other Passenger Land Transport
+Value=4923;Freight Transport by Road
+Value=4930;Transport Via Pipeline
+Value=5021;Inland Passenger Water Transport
+Value=5022;Inland Freight Water Transport
+Value=5110;Passenger Air Transport
+Value=5120;Freight Air Transport
+Value=5210;Warehousing and Storage
+Value=5221;Service Activities Incidental to Land Transportation
+Value=5222;Service Activities Incidental to Water Transportation
+Value=5223;Service Activities Incidental to Air Transportation
+Value=5224;Cargo Handling
+Value=5229;Other Transportation Support Activities
+Value=5310;Postal Activities
+Value=5320;Courier Activities
+Value=5510;Short Term Accommodation Activities
+Value=5520;Camping Grounds, Recreational Vehicles Parks and Trailer Parks
+Value=5590;Other Accommodation
+Value=5610;Restaurants and Mobile Food Services Activities
+Value=5621;Events Catering
+Value=5629;Other Food Services Activities
+Value=5630;Beverage Serving Activities
+Value=5811;Book Publishing
+Value=5812;Publishing of Directories and Mailing Lists
+Value=5813;Publishing of Newspapers, Journals and Periodicals
+Value=5819;Other Publishing Activities
+Value=5820;Software Publishing
+Value=5911;Motion Picture, Video and Television Programme Activities
+Value=5912;Motion Picture, Video and Television Programme Post-Production Activities
+Value=5913;Motion Picture, Video and television Programme Distribution Activities
+Value=5914;Motion Picture Projection Activities
+Value=5920;Sound Recording and Music Publishing Activities
+Value=6010;Radio Broadcasting
+Value=6020;Television Programming and Broadcasting Activities
+Value=6110;Wired Telecommunications Activities
+Value=6120;Wireless Telecommunications Activities
+Value=6130;Satellite Telecommunications Activities
+Value=6190;Other Telecommunications Activities
+Value=6201;Computer Programming Activities
+Value=6202;Computer Consultancy and Computer Facilities Management Activities
+Value=6209;Other Information Technology and Computer Service Activities
+Value=6311;Data Processing, Hosting and Related Activities
+Value=6312;Web Portals
+Value=6391;News Agency Activities
+Value=6399;Other Information  Service Activities NEC
+Value=6311;Data Processing, Hosting and Related Activities
+Value=6312;Web Portals
+Value=6391;News Agency Activities
+Value=6399;Other Information Service Activities NEC
+Value=6411;Central banking
+Value=6419;Other Monetary Intermediation
+Value=6420;Activities on Holding Companies
+Value=6430;Trusts, Funds and Similar Financial Entities
+Value=6491;Financial Leasing
+Value=6492;Other Credit Granting
+Value=6499;Other Financial Service Activities except Insurance and Pending Funding
+Value=6511;Life Insurance
+Value=6512;Non-Life Insurance
+Value=6520;Reinsurance
+Value=6530;Pension Funding
+Value=6611;Administration of Financial markets
+Value=6612;Security and Commodity Contract Brokerage
+Value=6619;Other Activities Auxiliary to Financial Service Activities
+Value=6621;Risk and Damage Evaluation
+Value=6622;Activities of Insurance Agents and brokers
+Value=6629;Other Activities Auxiliary to Insurance and Pension Funding
+Value=6630;Fund Management Activities
+Value=6810;Real Estate Activities with Own or Leased Property
+Value=6820;Real Estate Activities on a Free or Contract Basis
+Value=6910;Legal Activities
+Value=6920;Accounting, Bookkeeping and Auditing Activities; Tax Consultancy
+Value=7010;Activities of Head Offices
+Value=7020;Management Consultancy Activities
+Value=7110;Architectural and Engineering Activities and Related Technical Consultancy
+Value=7120;Technical Testing and Analysis
+Value=7210;Research and Experimental Development on Natural Sciences and Engineering
+Value=7220;Research and Experimental Development on Social Sciences and Humanities
+Value=7310;Advertising
+Value=7320;Market Research and Public Opinion Polling
+Value=7500;Veterinary Activities
+Value=7710;Renting and Leasing of Motor Vehicles
+Value=7721;Renting and Leasing of Recreational and Sports Goods
+Value=7722;Renting of Video Tapes and Disks
+Value=7729;Renting and Leasing of Other Personal and Household Goods
+Value=7730;Renting and Leasing of Other Machinery, Equipment and Tangible Goods
+Value=7740;Leasing and Intellectual property and similar Products, except Copyrighted
+Value=7810;Activities of Employment Placement Agencies
+Value=7820;Temporary Employment Agency Activities
+Value=7830;Other Human Resources Provision
+Value=7911;Travel Agency Activities
+Value=7912;Tour Operator Activities
+Value=7990;Other Reservation Services and Related Activities
+Value=8010;Private Security Activities
+Value=8020;Security Systems Services Activities
+Value=8030;Investigation Activities
+Value=8110;Combined Facilities Support Activities
+Value=8121;General Cleaning of Buildings
+Value=8129;Other Building and Industrial Cleaning Activities
+Value=8130;Landscape Care and Maintenance Service Activities
+Value=8211;Combined Office Administrative and Support Activities
+Value=8219;Photocopying, Document Preparation and Other Specialised Office Support
+Value=8220;Activities of Call Centres
+Value=8230;Organisations of Conventions and Trade Shows
+Value=8291;Activities of Collection Agencies and Credit Bureaus
+Value=8292;Packaging Activities
+Value=8299;Other Business Support Service Activities NEC
+Value=8411;General Public Administration Activities
+Value=8412;Regulation of the Activities of Providing Health Care, Education, Cultural Services and Other Social Services, excluding Social Security
+Value=8413;Regulation of and Contribution to More Efficient Operation of Businesses
+Value=8414;Local Government Activities (Cities/Towns/District Councils and Land Boards Activities)
+Value=8421;Foreign Affairs
+Value=8422;Defence Activities
+Value=8423;Public Order and Safety Activities
+Value=8430;Compulsory Social Security Activities
+Value=8431;Voluntary Social/ Community Service Activities (e.g Tirelo Sechaba)
+Value=8510;Pre-Primary and Primary Education
+Value=8521;General Secondary Education
+Value=8522;Technical and Vocational Secondary Education
+Value=8530;Higher Education
+Value=8541;Sports and Recreation Education
+Value=8542;Cultural Education
+Value=8549;Other Education NEC
+Value=8550;Educational Support Activities
+Value=8610;Hospital Activities
+Value=8620;Medical and Dental Practice Activities
+Value=8690;Human Health Activities
+Value=8710;Residential Nursing Care Facilities
+Value=8720;Residential Care Activities for Mental Retardation, Mental Health and Substance Abuse (PLWD)
+Value=8730;Residential Care Activities for the Elderly and People Living With Disability
+Value=8790;Other Residential Care Activities
+Value=8810;Social Work Activities without Accommodation for the Elderly and PLWD
+Value=8890;Other Social Work Activities without Accommodation
+Value=9001;Music Activities, Composers, Producers and Songwriters
+Value=9002;Literature, Writers and Editors
+Value=9003;Visual Arts, Sculptors and Illustrators
+Value=9004;Performing Arts, Dancers and Event Managers
+Value=9005;Film, Actors and Associated Agents
+Value=9101;Library and Archives Activities
+Value=9102;Museums Activities and Operation of Historical Sites and Buildings
+Value=9103;Botanical and Zoological Gardens and Nature Reserve Activities
+Value=9200;Gambling and betting Activities
+Value=9311;Operation of Sports Facilities
+Value=9312;Activities of Sports Clubs
+Value=9319;Other Sports Activities
+Value=9321;Activities of Amusement Parks and Theme Parks
+Value=9329;Other Amusement and Recreational Activities NEC
+Value=9411;Activities of Business and Employers Membership Organisations
+Value=9412;Activities of Professional Membership Organisations
+Value=9420;Activities of Trade Unions
+Value=9491;Activities of Religious Organisations
+Value=9492;Activities of Political Organisations
+Value=9499;Activities of Other Membership Organisations NEC
+Value=9511;Repair of Computers and Peripheral Equipment
+Value=9512;Repair of Communication Equipment
+Value=9521;Repair of Consumer Electronics
+Value=9522;Repair of Household Appliances and Home and Garden Equipment
+Value=9523;Repair of Footwear and Leather Goods
+Value=9524;Repair of Furniture and Home Furnishings
+Value=9529;Repair of Other Personal and Household Goods
+Value=9601;Washing and Dry-Cleaning of Textiles and Fur Products
+Value=9602;Hairdressing and Other Beauty Treatment
+Value=9603;Funeral and Related Activities
+Value=9609;Other Personal Service Activities NEC
+Value=9700;Activities of Households as Employers of Domestic Personnel
+Value=9810;Undifferentiated Goods -Producing Activities of Private Households for Own Use
+Value=9820;Undifferentiated Services-Producing Activities of Private Households for Own Use
+Value=9900;Activities of Extraterritorial Organizations and Bodies
+
+[Item]
+Label=Sector of Employment
+Name=A36_EMP_SECTOR
+Start=282
+Len=1
+
+[ValueSet]
+Label=Sector of Employment
+Name=A36_EMP_SECTOR_VS1
+Value=1;Central Government
+Value=2;Local Covernment
+Value=3;Parastatal
+Value=4;Private Sector
+Value=5;Non - Government Organisation
+Value=6;Private Household
+Value=7;Ipelegeng
+Value=8;Self-Employment in own non-agric enterprise paid or unpaid
+Value=9;Worked in own or household farm, (products are mainly for sale)
+
+[Item]
+Label=Own any Land
+Name=A37_OWN_LAND
+Start=283
+Len=1
+
+[ValueSet]
+Label=Own any Land
+Name=A37_OWN_LAND_VS1
+Value=1;Agricultural
+Value=2;Residential
+Value=3;Business
+Value=4;Agriculture & Residential
+Value=5;Agriculture & Business
+Value=6;Residential & Business
+Value=7;All
+Value=8;None
+
+[Item]
+Label=How  land was aquired
+Name=A38_LAND_AQUIRED
+Start=284
+Len=1
+
+[ValueSet]
+Label=How  land was aquired
+Name=A38_LAND_AQUIRED_VS1
+Value=1;Applied
+Value=2;Inheritance
+Value=3;Purchased
+Value=4;Applied & Inheritance
+Value=5;Applied & Purchased
+Value=6;Inheritance & Purchased
+Value=7;All
+
+[Item]
+Label=Have Certificate/Tittle Deed for Land
+Name=A39_HVE_CERTIFICATE
+Start=285
+Len=1
+
+[ValueSet]
+Label=Have Certificate/Tittle Deed for Land
+Name=A39_HVE_CERTIFICATE_VS1
+Value=1;Alone
+Value=2;Jointly
+Value=3;Both alone & jointly
+Value=4;Alone & no certificate
+Value=5;No certificate / tittle deed
+
+[Item]
+Label=Number of Male children born alive
+Name=A40M_ALIVE
+Start=286
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Number of Female children born alive
+Name=A40F_F_ALIVE
+Start=288
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Number of Male children living with mother
+Name=A41M_M_WITH_MOTHER
+Start=290
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Number of Female children living with mother
+Name=A41F_F_WITH_MOTHER
+Start=292
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Number of Male children living elsewhere
+Name=A42M_M_ELSEWHERE
+Start=294
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Number of Female children living elsewhere
+Name=A42F_F_ELSEWHERE
+Start=296
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Number of male children dead
+Name=A43M_M_DEAD
+Start=298
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Number of female children dead
+Name=A43F_F_DEAD
+Start=300
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Age at first  Birth
+Name=A44_AGE_1ST_BIRTH
+Start=302
+Len=2
+
+[Item]
+Label=Males Born Past 12 months
+Name=A45M_M_PAST_YEAR
+Start=304
+Len=1
+
+[Item]
+Label=Females Born Past 12 Months
+Name=A45F_F_PAST_YEAR
+Start=305
+Len=1
+
+[Item]
+Label=Male Children Still Alive
+Name=A46M_M_STILL_ALIVE
+Start=306
+Len=1
+ZeroFill=Yes
+
+[Item]
+Label=Female Children Still Alive
+Name=A46F_F_STILL_ALIVE
+Start=307
+Len=1
+
+[Item]
+Label=Date of Birth of Last child born - Month
+Name=A47M_BIRTH_MONTH
+Start=308
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Date of Birth of Last child born - Year
+Name=A47Y_BIRTH_YEAR
+Start=310
+Len=4
+
+[Item]
+Label=Use of mobile phone in the last 3 months
+Name=A48_USED_CELL_PHONE
+Start=314
+Len=1
+
+[ValueSet]
+Label=Use of mobile phone in the last 3 months
+Name=A48_USED_CELL_PHONE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Use of computer in the last 3 months
+Name=A49_USED_COMPUTER_DEVICE
+Start=315
+Len=1
+
+[ValueSet]
+Label=Use of computer in the last 3 months
+Name=A49_USED_COMPUTER_DEVICE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Use of Internet in the last 3 months
+Name=A50_INTERNET_USE
+Start=316
+Len=1
+
+[ValueSet]
+Label=Use of Internet in the last 3 months
+Name=A50_INTERNET_USE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Difficulty Seeing
+Name=A51_SEEING
+Start=317
+Len=1
+
+[ValueSet]
+Label=Difficulty Seeing
+Name=A51_SEEING_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulity
+Value=3;A lot of difficulty
+Value=4;Cannot see at all
+Value=5;Don't Know
+
+[Item]
+Label=Difficulty Hearing
+Name=A52_HEARING
+Start=318
+Len=1
+
+[ValueSet]
+Label=Difficulty Hearing
+Name=A52_HEARING_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulity
+Value=3;A lot of difficulty
+Value=4;Cannot hear at all
+Value=5;Don't Know
+
+[Item]
+Label=Difficulty Communicating
+Name=A53_COMMUNICATING
+Start=319
+Len=1
+
+[ValueSet]
+Label=Difficulty Communicating
+Name=A53_COMMUNICATING_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulity
+Value=3;A lot of difficulty
+Value=4;Cannot communicate  at all
+Value=5;Don't Know
+
+[Item]
+Label=Difficulty Walking
+Name=A54_WALKING
+Start=320
+Len=1
+
+[ValueSet]
+Label=Difficulty Walking
+Name=A54_WALKING_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulity
+Value=3;A lot of difficulty
+Value=4;Cannot walk at all
+Value=5;Don't Know
+
+[Item]
+Label=Difficulty Remembering
+Name=A55_REMEMBERING
+Start=321
+Len=1
+
+[ValueSet]
+Label=Difficulty Remembering
+Name=A55_REMEMBERING_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulity
+Value=3;A lot of difficulty
+Value=4;Cannot remember/concentrate at all
+Value=5;Don't Know
+
+[Item]
+Label=Difficulty in Selfcare
+Name=A56_SELFCARE
+Start=322
+Len=1
+
+[ValueSet]
+Label=Difficulty in Selfcare
+Name=A56_SELFCARE_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulity
+Value=3;A lot of difficulty
+Value=4;Cannot do selfcare at all
+Value=5;Don't Know
+
+[Item]
+Label=Are the more persons?
+Name=ARE_THE_MORE_PERSONS
+Start=323
+Len=1
+
+[ValueSet]
+Label=Are the more persons?
+Name=ARE_THE_MORE_PERSONS_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Section_B
+Name=SECTION_B
+RecordTypeValue='3'
+Required=No
+MaxRecords=5
+RecordLen=168
+
+[Item]
+Label=Name of Emigrant
+Name=B1_NAME
+Start=23
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Serial Number
+Name=B2_SERIAL_NUMBER
+Start=53
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Relationship to Head Of House
+Name=B3_RELATIONSHIP
+Start=55
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Relationship to Head Of House
+Name=B3_RELATIONSHIP_VS1
+Value=1;Spouse/Partner
+Value=2;Son/Daughter
+Value=3;Son/daughter In Law
+Value=4;Step Child
+Value=5;Grandchild
+Value=6;Parent
+Value=7;Father/Mother In Law
+Value=8;Grand Parent
+Value=9;Brother/Sister
+Value=10;Nephew/Niece
+Value=11;Other relative
+Value=12;Visitor
+Value=13;Not Related
+
+[Item]
+Label=Sex of household member
+Name=B4_SEX
+Start=57
+Len=1
+
+[Item]
+Label=Age of household member in completed years
+Name=B5_AGE
+Start=58
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Birth date of household member in months and years
+Name=B6_BIRTH_DATE
+Start=60
+Len=6
+ZeroFill=Yes
+
+[Item]
+Label=Birth Month
+Name=B6_BIRTH_MONTH
+Start=60
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=Birth Month
+Name=B6_BIRTH_MONTH_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+
+[Item]
+Label=Birth Year
+Name=B6_BIRTH_YEAR
+Start=66
+Len=4
+
+[ValueSet]
+Label=Birth Year
+Name=B6_BIRTH_YEAR_VS1
+Value=1922;1922
+Value=1923;1923
+Value=1924;1924
+Value=1925;1925
+Value=1926;1926
+Value=1927;1927
+Value=1928;1928
+Value=1929;1929
+Value=1930;1930
+Value=1931;1931
+Value=1932;1932
+Value=1933;1933
+Value=1934;1934
+Value=1935;1935
+Value=1936;1936
+Value=1937;1937
+Value=1938;1938
+Value=1939;1939
+Value=1940;1940
+Value=1941;1941
+Value=1942;1942
+Value=1943;1943
+Value=1944;1944
+Value=1945;1945
+Value=1946;1946
+Value=1947;1947
+Value=1948;1948
+Value=1949;1949
+Value=1950;1950
+Value=1951;1951
+Value=1952;1952
+Value=1953;1953
+Value=1954;1954
+Value=1955;1955
+Value=1956;1956
+Value=1957;1957
+Value=1958;1958
+Value=1959;1959
+Value=1960;1960
+Value=1961;1961
+Value=1962;1962
+Value=1963;1963
+Value=1964;1964
+Value=1965;1965
+Value=1966;1966
+Value=1967;1967
+Value=1968;1968
+Value=1969;1969
+Value=1970;1970
+Value=1971;1971
+Value=1972;1972
+Value=1973;1973
+Value=1974;1974
+Value=1975;1975
+Value=1976;1976
+Value=1977;1977
+Value=1978;1978
+Value=1979;1979
+Value=1980;1980
+Value=1981;1981
+Value=1982;1982
+Value=1983;1983
+Value=1984;1984
+Value=1985;1985
+Value=1986;1986
+Value=1987;1987
+Value=1988;1988
+Value=1989;1989
+Value=1990;1990
+Value=1991;1991
+Value=1992;1992
+Value=1993;1993
+Value=1994;1994
+Value=1995;1995
+Value=1996;1996
+Value=1997;1997
+Value=1998;1998
+Value=1999;1999
+Value=2000;2000
+Value=2001;2001
+Value=2002;2002
+Value=2003;2003
+Value=2004;2004
+Value=2005;2005
+Value=2006;2006
+Value=2007;2007
+Value=2008;2008
+Value=2009;2009
+Value=2010;2010
+Value=2011;2011
+Value=2012;2012
+Value=2013;2013
+Value=2014;2014
+Value=2015;2015
+Value=2016;2016
+Value=2017;2017
+Value=2018;2018
+Value=2019;2019
+Value=2020;2020
+
+[Item]
+Label=Has household member ever been to school
+Name=B7_ATTENDED_SCHOOL
+Start=70
+Len=1
+
+[ValueSet]
+Label=Has household member ever been to school
+Name=B7_ATTENDED_SCHOOL_VS1
+Value=1;Still at school
+Value=2;Left, completed School
+Value=3;Left (Discontinued)
+Value=4;Never Attended
+
+[Item]
+Label=Highest level of education that the household member has completed
+Name=B8_HIGHEST_EDUCATION_LEVEL
+Start=71
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=Education Type
+Name=B8_TYPE
+Start=71
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=Education Type
+Name=B8_TYPE_VS1
+Value=0;Preschool
+Value=1;Primary
+Value=2;Secondary
+Value=3;Non Formal - basic educ
+Value=11;Apprentice
+Value=12;Brigade
+Value=13;Technical/Vocational 16 University
+Value=14;Educational College
+Value=15;Inst. Of Health Sciences
+Value=16;University
+
+[Item]
+Label=Education Level
+Name=B8_LEVEL
+Start=73
+Len=1
+ItemType=SubItem
+
+[ValueSet]
+Label=Education Level
+Name=B8_LEVEL_VS1
+Value=0;General Education
+Value=1;Certificate
+Value=2;Diploma
+Value=3;Degree
+Value=4;Post Graduate
+Value=5;PHD/Doctrate
+
+[Item]
+Label=Education Year
+Name=B8_YEAR
+Start=74
+Len=1
+ItemType=SubItem
+
+[ValueSet]
+Label=Education Year
+Name=B8_YEAR_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+
+[Item]
+Label=Subject of Training
+Name=B9_SUBJECT_OF_TRAINING
+Start=75
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Household member’s marital status
+Name=B10_MARITAL_STATUS
+Start=105
+Len=1
+
+[ValueSet]
+Label=Household member’s marital status
+Name=B10_MARITAL_STATUS_VS1
+Value=1;Married
+Value=2;Never Married
+Value=3;Living Together
+Value=4;Separated
+Value=5;Divorced
+Value=6;Widowed
+
+[Item]
+Label=Household member’s country of residence now
+Name=B11_COUNTRY_OF_RESIDENCE
+Start=106
+Len=3
+ZeroFill=Yes
+
+[ValueSet]
+Label=Household member’s country of residence now
+Name=B11_COUNTRY_OF_RESIDENCE_VS1
+Value=4;Afghanistan
+Value=248;Aland Islands
+Value=8;Albania
+Value=12;Algeria
+Value=16;American Samoa
+Value=20;Andorra
+Value=24;Angola
+Value=660;Anguilla
+Value=10;Antarctica
+Value=28;Antigua and Barbuda
+Value=32;Argentina
+Value=51;Armenia
+Value=533;Aruba
+Value=36;Australia
+Value=40;Austria
+Value=31;Azerbaijan
+Value=44;Bahamas
+Value=48;Bahrain
+Value=50;Bangladesh
+Value=52;Barbados
+Value=112;Belarus
+Value=56;Belgium
+Value=84;Belize
+Value=204;Benin
+Value=60;Bermuda
+Value=64;Bhutan
+Value=68;Bolivia
+Value=535;Bonaire
+Value=70;Bosnia and Herzegovina
+Value=72;Botswana
+Value=74;Bouvet Island
+Value=76;Brazil
+Value=86;British Indian Ocean Territory
+Value=92;British Virgin Islands
+Value=96;Brunei Darussalam
+Value=100;Bulgaria
+Value=854;Burkina Faso
+Value=108;Burundi
+Value=384;CÃ´te d’Ivoire
+Value=116;Cambodia
+Value=120;Cameroon
+Value=124;Canada
+Value=132;Cape Verde
+Value=136;Cayman Islands
+Value=140;Central African Republic
+Value=148;Chad
+Value=152;Chile
+Value=156;China
+Value=162;Christmas Island
+Value=166;Cocos (Keeling) Islands
+Value=170;Colombia
+Value=174;Comoros
+Value=178;Congo
+Value=184;Cook Islands
+Value=188;Costa Rica
+Value=191;Croatia
+Value=192;Cuba
+Value=531;CuraÃ§ao
+Value=196;Cyprus
+Value=203;Czech Republic
+Value=180;Democratic Republic of the Congo
+Value=208;Denmark
+Value=262;Djibouti
+Value=212;Dominica
+Value=214;Dominican Republic
+Value=218;Ecuador
+Value=818;Egypt
+Value=222;El Salvador
+Value=226;Equatorial Guinea
+Value=232;Eritrea
+Value=233;Estonia
+Value=231;Ethiopia
+Value=238;Falkland Islands (Malvinas)
+Value=234;Faroe Islands
+Value=242;Fiji
+Value=246;Finland
+Value=250;France
+Value=254;French Guiana
+Value=258;French Polynesia
+Value=260;French Southern Territories
+Value=266;Gabon
+Value=270;Gambia
+Value=268;Georgia
+Value=276;Germany
+Value=288;Ghana
+Value=292;Gibraltar
+Value=300;Greece
+Value=304;Greenland
+Value=308;Grenada
+Value=312;Guadeloupe
+Value=316;Guam
+Value=320;Guatemala
+Value=831;Guernsey
+Value=324;Guinea
+Value=624;Guinea-Bissau
+Value=328;Guyana
+Value=332;Haiti
+Value=334;Heard Island and McDonald Islands
+Value=336;Holy See (Vatican City State)
+Value=340;Honduras
+Value=344;Hong Kong
+Value=348;Hungary
+Value=352;Iceland
+Value=356;India
+Value=360;Indonesia
+Value=364;Iran, Islamic Republic of
+Value=368;Iraq
+Value=372;Ireland
+Value=833;Isle of Man
+Value=376;Israel
+Value=380;Italy
+Value=388;Jamaica
+Value=392;Japan
+Value=832;Jersey
+Value=400;Jordan
+Value=398;Kazakhstan
+Value=404;Kenya
+Value=296;Kiribati
+Value=408;Korea, Democratic People’s Republic of
+Value=410;Korea, Republic of
+Value=414;Kuwait
+Value=417;Kyrgyzstan
+Value=418;Lao People’s Democratic Republic
+Value=428;Latvia
+Value=422;Lebanon
+Value=426;Lesotho
+Value=430;Liberia
+Value=434;Libya
+Value=438;Liechtenstein
+Value=440;Lithuania
+Value=442;Luxembourg
+Value=446;Macao
+Value=807;Macedonia, the Former Yugoslav Republic of
+Value=450;Madagascar
+Value=454;Malawi
+Value=458;Malaysia
+Value=462;Maldives
+Value=466;Mali
+Value=470;Malta
+Value=584;Marshall Islands
+Value=474;Martinique
+Value=478;Mauritania
+Value=480;Mauritius
+Value=175;Mayotte
+Value=484;Mexico
+Value=583;Micronesia, Federated States of
+Value=498;Moldova, Republic of
+Value=492;Monaco
+Value=496;Mongolia
+Value=499;Montenegro
+Value=500;Montserrat
+Value=504;Morocco
+Value=508;Mozambique
+Value=104;Myanmar
+Value=516;Namibia
+Value=520;Nauru
+Value=524;Nepal
+Value=528;Netherlands
+Value=540;New Caledonia
+Value=554;New Zealand
+Value=558;Nicaragua
+Value=562;Niger
+Value=566;Nigeria
+Value=570;Niue
+Value=574;Norfolk Island
+Value=580;Northern Mariana Islands
+Value=578;Norway
+Value=512;Oman
+Value=586;Pakistan
+Value=585;Palau
+Value=275;Palestine, State of
+Value=591;Panama
+Value=598;Papua New Guinea
+Value=600;Paraguay
+Value=604;Peru
+Value=608;Philippines
+Value=612;Pitcairn
+Value=616;Poland
+Value=620;Portugal
+Value=630;Puerto Rico
+Value=634;Qatar
+Value=638;Reunion
+Value=642;Romania
+Value=643;Russian Federation
+Value=646;Rwanda
+Value=652;Saint Barthelemy
+Value=654;Saint Helena
+Value=659;Saint Kitts and Nevis
+Value=662;Saint Lucia
+Value=663;Saint Martin (French part)
+Value=666;Saint Pierre and Miquelon
+Value=670;Saint Vincent and the Grenadines
+Value=882;Samoa
+Value=674;San Marino
+Value=678;Sao Tome and Principe
+Value=682;Saudi Arabia
+Value=686;Senegal
+Value=688;Serbia
+Value=690;Seychelles
+Value=694;Sierra Leone
+Value=702;Singapore
+Value=534;Sint Maarten (Dutch part)
+Value=703;Slovakia
+Value=705;Slovenia
+Value=90;Solomon Islands
+Value=706;Somalia
+Value=710;South Africa
+Value=239;South Georgia and the South Sandwich Islands
+Value=728;South Sudan
+Value=724;Spain
+Value=144;Sri Lanka
+Value=729;Sudan
+Value=740;Suriname
+Value=744;Svalbard and Jan Mayen
+Value=748;Swaziland
+Value=752;Sweden
+Value=756;Switzerland
+Value=760;Syrian Arab Republic
+Value=158;Taiwan, Province of China
+Value=762;Tajikistan
+Value=764;Thailand
+Value=626;Timor-Leste
+Value=768;Togo
+Value=772;Tokelau
+Value=776;Tonga
+Value=780;Trinidad and Tobago
+Value=788;Tunisia
+Value=792;Turkey
+Value=795;Turkmenistan
+Value=796;Turks and Caicos Islands
+Value=798;Tuvalu
+Value=800;Uganda
+Value=804;Ukraine
+Value=784;United Arab Emirates
+Value=826;United Kingdom
+Value=834;United Republic of Tanzania
+Value=840;United States
+Value=581;United States Minor Outlying Islands
+Value=858;Uruguay
+Value=850;US Virgin Islands
+Value=860;Uzbekistan
+Value=548;Vanuatu
+Value=862;Venezuela
+Value=704;Viet Nam
+Value=876;Wallis and Futuna
+Value=732;Western Sahara
+Value=887;Yemen
+Value=894;Zambia
+Value=716;Zimbabwe
+
+[Item]
+Label=Last time household member visited
+Name=B12_DATE_OF_LAST_VISIT
+Start=109
+Len=6
+ZeroFill=Yes
+
+[Item]
+Label=Last Visit Month
+Name=B12_LAST_VISIT_MONTH
+Start=109
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=Last Visit Month
+Name=B12_LAST_VISIT_MONTH_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+
+[Item]
+Label=Last Visit Year
+Name=B12_LAST_VISIT_YEAR
+Start=111
+Len=4
+ItemType=SubItem
+
+[ValueSet]
+Label=Last Visit Year
+Name=B12_LAST_VISIT_YEAR_VS1
+Value=1922;1922
+Value=1923;1923
+Value=1924;1924
+Value=1925;1925
+Value=1926;1926
+Value=1927;1927
+Value=1928;1928
+Value=1929;1929
+Value=1930;1930
+Value=1931;1931
+Value=1932;1932
+Value=1933;1933
+Value=1934;1934
+Value=1935;1935
+Value=1936;1936
+Value=1937;1937
+Value=1938;1938
+Value=1939;1939
+Value=1940;1940
+Value=1941;1941
+Value=1942;1942
+Value=1943;1943
+Value=1944;1944
+Value=1945;1945
+Value=1946;1946
+Value=1947;1947
+Value=1948;1948
+Value=1949;1949
+Value=1950;1950
+Value=1951;1951
+Value=1952;1952
+Value=1953;1953
+Value=1954;1954
+Value=1955;1955
+Value=1956;1956
+Value=1957;1957
+Value=1958;1958
+Value=1959;1959
+Value=1960;1960
+Value=1961;1961
+Value=1962;1962
+Value=1963;1963
+Value=1964;1964
+Value=1965;1965
+Value=1966;1966
+Value=1967;1967
+Value=1968;1968
+Value=1969;1969
+Value=1970;1970
+Value=1971;1971
+Value=1972;1972
+Value=1973;1973
+Value=1974;1974
+Value=1975;1975
+Value=1976;1976
+Value=1977;1977
+Value=1978;1978
+Value=1979;1979
+Value=1980;1980
+Value=1981;1981
+Value=1982;1982
+Value=1983;1983
+Value=1984;1984
+Value=1985;1985
+Value=1986;1986
+Value=1987;1987
+Value=1988;1988
+Value=1989;1989
+Value=1990;1990
+Value=1991;1991
+Value=1992;1992
+Value=1993;1993
+Value=1994;1994
+Value=1995;1995
+Value=1996;1996
+Value=1997;1997
+Value=1998;1998
+Value=1999;1999
+Value=2000;2000
+Value=2001;2001
+Value=2002;2002
+Value=2003;2003
+Value=2004;2004
+Value=2005;2005
+Value=2006;2006
+Value=2007;2007
+Value=2008;2008
+Value=2009;2009
+Value=2010;2010
+Value=2011;2011
+Value=2012;2012
+Value=2013;2013
+Value=2014;2014
+Value=2015;2015
+Value=2016;2016
+Value=2017;2017
+Value=2018;2018
+Value=2019;2019
+Value=2020;2020
+
+[Item]
+Label=How Long does Household member intend to stay in that Country
+Name=B13_INTEND_TO_STAY_COUNTRY
+Start=115
+Len=1
+
+[Item]
+Label=Reasons for absence
+Name=B14_REASON_FOR_ABSENCE
+Start=116
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Reasons for absence
+Name=B14_REASON_FOR_ABSENCE_VS1
+Value=1;Working in mines
+Value=2;Working in farms
+Value=3;Working as domestic
+Value=4;Student
+Value=5;Visiting
+Value=6;Official business
+Value=7;Accompanying
+Value=8;Medical
+Value=9;Working abroad
+Value=10;Other Specify
+
+[Item]
+Label=Other Reason for Absence
+Name=B14_OTHER_REASON_FOR_ABSENCE
+Start=118
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Additional household members emigrated from Botswana
+Name=B15_ADDITIONAL_MEMBERS_EMIGRATED
+Start=168
+Len=1
+
+[ValueSet]
+Label=Additional household members emigrated from Botswana
+Name=B15_ADDITIONAL_MEMBERS_EMIGRATED_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Section_D
+Name=SECTION_D
+RecordTypeValue='5'
+Required=No
+MaxRecords=5
+RecordLen=77
+
+[Item]
+Label=Serial No
+Name=D1_SERIAL_NO
+Start=23
+Len=1
+
+[Item]
+Label=Any member of the household died
+Name=D1_ANY_MEMBER_DIED
+Start=24
+Len=1
+
+[ValueSet]
+Label=Any member of the household died
+Name=D1_ANY_MEMBER_DIED_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Any burial occurred in the household  in the last 12months
+Name=D2_DEATHS_LAST_12MONTHS
+Start=25
+Len=1
+
+[ValueSet]
+Label=Any burial occurred in the household  in the last 12months
+Name=D2_DEATHS_LAST_12MONTHS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Full names of the deceased
+Name=D3_NAMES_OF_DECEASED
+Start=26
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Relationship to head of household
+Name=D4_RELATIONSHIP
+Start=56
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Relationship to head of household
+Name=D4_RELATIONSHIP_VS1
+Value=1;Spouse/Partner
+Value=2;Son/Daughter
+Value=3;Son/daughter In Law
+Value=4;Step Child
+Value=5;Grandchild
+Value=6;Parent
+Value=7;Father/Mother In Law
+Value=8;Grand Parent
+Value=9;Brother/Sister
+Value=10;Nephew/Niece
+Value=11;Other relative
+Value=12;Visitor
+Value=13;Not Related
+
+[Item]
+Label=The deceased’s date of death
+Name=D5_DOD
+Start=58
+Len=6
+ZeroFill=Yes
+
+[Item]
+Label=DOD Month
+Name=D5_DOD_MONTH
+Start=58
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=DOD Month
+Name=D5_DOD_MONTH_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+
+[Item]
+Label=DOD Year
+Name=D5_DOD_YEAR
+Start=60
+Len=4
+ItemType=SubItem
+
+[ValueSet]
+Label=DOD Year
+Name=D5_DOD_YEAR_VS1
+Value=2019;2019
+Value=2020;2020
+Value=2021;2021
+
+[Item]
+Label=Sex of Deceased
+Name=D6_SEX
+Start=64
+Len=1
+
+[ValueSet]
+Label=Sex of Deceased
+Name=D6_SEX_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=Age of the deceased in completed years
+Name=D7_AGE
+Start=65
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=The deceased’s place of usual residence
+Name=D8_USUAL_RESIDENCE_DECEASED
+Start=67
+Len=7
+ZeroFill=Yes
+
+[Item]
+Label=If deceased was pregnant when she died
+Name=D9_DIED_WHEN_PREGNANT
+Start=74
+Len=1
+
+[ValueSet]
+Label=If deceased was pregnant when she died
+Name=D9_DIED_WHEN_PREGNANT_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=If Deceased died During Childbirth
+Name=D10_DEATH_DURING_CHILDBIRTH
+Start=75
+Len=1
+
+[ValueSet]
+Label=If Deceased died During Childbirth
+Name=D10_DEATH_DURING_CHILDBIRTH_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=If Death Occurred Within 2 Months after end of Pregnancy
+Name=D11_WITHIN_2_MONTHS_AFTER_PREGNANCY
+Start=76
+Len=1
+
+[ValueSet]
+Label=If Death Occurred Within 2 Months after end of Pregnancy
+Name=D11_WITHIN_2_MONTHS_AFTER_PREGNANCY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Any additional members who died in the last 12 months
+Name=D12_ANY_MORE_DIED
+Start=77
+Len=1
+
+[ValueSet]
+Label=Any additional members who died in the last 12 months
+Name=D12_ANY_MORE_DIED_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Section_E
+Name=SECTION_E
+RecordTypeValue='6'
+RecordLen=807
+
+[Item]
+Label=Own Cattle
+Name=E1_CATTLE_OWNERHIP
+Start=23
+Len=2
+
+[ValueSet]
+Label=Own Cattle
+Name=E1_CATTLE_OWNERHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Own Goats
+Name=E1_GOATS_OWNERSHIP
+Start=25
+Len=2
+
+[ValueSet]
+Label=Own Goats
+Name=E1_GOATS_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Own Sheep
+Name=E1_SHEEP_OWNERSHIP
+Start=27
+Len=2
+
+[ValueSet]
+Label=Own Sheep
+Name=E1_SHEEP_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Own Pigs
+Name=E1_PIGS_OWNERSHIP
+Start=29
+Len=2
+
+[ValueSet]
+Label=Own Pigs
+Name=E1_PIGS_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Own Poultry
+Name=E1_POULTRY_OWNERSHIP
+Start=31
+Len=2
+
+[ValueSet]
+Label=Own Poultry
+Name=E1_POULTRY_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Own Donkeys/Mules
+Name=E1_DONKEYS_MULES_OWNERSHIP
+Start=33
+Len=2
+
+[ValueSet]
+Label=Own Donkeys/Mules
+Name=E1_DONKEYS_MULES_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Own Horses
+Name=E1_HORSES_OWNERSHIP
+Start=35
+Len=2
+
+[ValueSet]
+Label=Own Horses
+Name=E1_HORSES_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Own Ostrich
+Name=E1_OSTRICH_OWNERSHIP
+Start=37
+Len=2
+
+[ValueSet]
+Label=Own Ostrich
+Name=E1_OSTRICH_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Own Game
+Name=E1_GAME_OWNERSHIP
+Start=39
+Len=2
+
+[ValueSet]
+Label=Own Game
+Name=E1_GAME_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=No Livestock Owned
+Name=E1_NONE
+Start=41
+Len=2
+
+[ValueSet]
+Label=No Livestock Owned
+Name=E1_NONE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=OtherSpecify
+Name=E1_OTHER_SPECIFY
+Start=43
+Len=2
+
+[Item]
+Label=OtherLivestock Not Listed
+Name=E1_OTHER_DESCRIPTION
+Start=45
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Plant_Sorghum
+Name=E2_PLANT_SORGHUM
+Start=75
+Len=2
+
+[ValueSet]
+Label=Plant_Sorghum
+Name=E2_PLANT_SORGHUM_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Maize
+Name=E2_PLANT_MAIZE
+Start=77
+Len=2
+
+[ValueSet]
+Label=Plant Maize
+Name=E2_PLANT_MAIZE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Beans/Pulses
+Name=E2_PLANT_BEANS_PULSES
+Start=79
+Len=2
+
+[ValueSet]
+Label=Plant Beans/Pulses
+Name=E2_PLANT_BEANS_PULSES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Millet
+Name=E2_PLANT_MILLET
+Start=81
+Len=2
+
+[ValueSet]
+Label=Plant Millet
+Name=E2_PLANT_MILLET_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Sunflower
+Name=E2_PLANT_SUNFLOWER
+Start=83
+Len=2
+
+[ValueSet]
+Label=Plant Sunflower
+Name=E2_PLANT_SUNFLOWER_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Groundnuts
+Name=E2_PLANT_GROUNDNUTS
+Start=85
+Len=2
+
+[ValueSet]
+Label=Plant Groundnuts
+Name=E2_PLANT_GROUNDNUTS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Watermelon
+Name=E2_PLANT_WATERMELON
+Start=87
+Len=2
+
+[ValueSet]
+Label=Plant Watermelon
+Name=E2_PLANT_WATERMELON_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Melons
+Name=E2_PLANT_MELONS
+Start=89
+Len=2
+
+[ValueSet]
+Label=Plant Melons
+Name=E2_PLANT_MELONS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Sweet Reeds
+Name=E2_PLANT_SWEET_REEDS
+Start=91
+Len=2
+
+[ValueSet]
+Label=Plant Sweet Reeds
+Name=E2_PLANT_SWEET_REEDS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant Wheat
+Name=E2_PLANT_WHEAT
+Start=93
+Len=2
+
+[ValueSet]
+Label=Plant Wheat
+Name=E2_PLANT_WHEAT_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant_Pumpkins
+Name=E2_PLANT_PUMPKINS
+Start=95
+Len=2
+
+[ValueSet]
+Label=Plant_Pumpkins
+Name=E2_PLANT_PUMPKINS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plant_Lucerne
+Name=E2_PLANT_LUCERNE
+Start=97
+Len=2
+
+[ValueSet]
+Label=Plant_Lucerne
+Name=E2_PLANT_LUCERNE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=No Crops Planted
+Name=E2_NONE
+Start=99
+Len=2
+
+[ValueSet]
+Label=No Crops Planted
+Name=E2_NONE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=OtherSpecifyCrops
+Name=E2_OTHER_SPECIFY
+Start=101
+Len=2
+
+[Item]
+Label=Other Crops Not Listed
+Name=E2_OTHER_DESCRIPTION
+Start=103
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Access To Land Used For Planting
+Name=E3_ACCESS_TO_LAND
+Start=133
+Len=1
+
+[ValueSet]
+Label=Access To Land Used For Planting
+Name=E3_ACCESS_TO_LAND_VS1
+Value=1;Yes-Own
+Value=2;Leased/Borrowed
+Value=3;No
+
+[Item]
+Label=Acquisition of Planting Land
+Name=E4_AQUISITION_PLANTING_LAND
+Start=134
+Len=2
+
+[ValueSet]
+Label=Acquisition of Planting Land
+Name=E4_AQUISITION_PLANTING_LAND_VS1
+Value=1;Landboard
+Value=2;Tribal
+Value=3;Inheritance
+Value=4;Freehold
+Value=5;Lease
+Value=6;TGLP
+Value=7;Syndicate
+Value=8;Employer
+Value=9;Relative
+Value=10;Self Allocated
+
+[Item]
+Label=CashRecipts_Ploughing services
+Name=E5_CASHRECIPTS_PLOUGHING_SERVICES
+Start=136
+Len=2
+
+[ValueSet]
+Label=CashRecipts_Ploughing services
+Name=E5_CASHRECIPTS_PLOUGHING_SERVICES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Hunting/Trapping
+Name=E5_CASHRECEIPTS_HUNTING_TRAPPING
+Start=138
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Hunting/Trapping
+Name=E5_CASHRECEIPTS_HUNTING_TRAPPING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Game/WildlifePropagation
+Name=E5_CASHRECEIPTS_GAME_WILDLIFEPROPAGATION
+Start=140
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Game/WildlifePropagation
+Name=E5_CASHRECEIPTS_GAME_WILDLIFEPROPAGATION_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Fishing
+Name=E5_CASHRECEIPTS_FISHING
+Start=142
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Fishing
+Name=E5_CASHRECEIPTS_FISHING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_TreePlanting
+Name=E5_CASHRECEIPTS_TREEPLANTING
+Start=144
+Len=2
+
+[ValueSet]
+Label=CashReceipts_TreePlanting
+Name=E5_CASHRECEIPTS_TREEPLANTING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_TimberHarvesting
+Name=E5_CASHRECEIPTS_TIMBERHARVESTING
+Start=146
+Len=2
+
+[ValueSet]
+Label=CashReceipts_TimberHarvesting
+Name=E5_CASHRECEIPTS_TIMBERHARVESTING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_SellingVeldProducts
+Name=E5_CASHRECEIPTS_SELLINGVELDPRODUCTS
+Start=148
+Len=2
+
+[ValueSet]
+Label=CashReceipts_SellingVeldProducts
+Name=E5_CASHRECEIPTS_SELLINGVELDPRODUCTS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_LIMID
+Name=E5_CASHRECEIPTS_LIMID
+Start=150
+Len=2
+
+[ValueSet]
+Label=CashReceipts_LIMID
+Name=E5_CASHRECEIPTS_LIMID_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_SellingLivestock
+Name=E5_CASHRECEIPTS_SELLINGLIVESTOCK
+Start=152
+Len=2
+
+[ValueSet]
+Label=CashReceipts_SellingLivestock
+Name=E5_CASHRECEIPTS_SELLINGLIVESTOCK_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_SellingCropProduce
+Name=E5_CASHRECEIPTS_SELLINGCROPPRODUCE
+Start=154
+Len=2
+
+[ValueSet]
+Label=CashReceipts_SellingCropProduce
+Name=E5_CASHRECEIPTS_SELLINGCROPPRODUCE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Piggery
+Name=E5_CASHRECEIPTS_PIGGERY
+Start=156
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Piggery
+Name=E5_CASHRECEIPTS_PIGGERY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_BeeKeeping
+Name=E5_CASHRECEIPTS_BEEKEEPING
+Start=158
+Len=2
+
+[ValueSet]
+Label=CashReceipts_BeeKeeping
+Name=E5_CASHRECEIPTS_BEEKEEPING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_DairyProduce
+Name=E5_CASHRECEIPTS_DAIRYPRODUCE
+Start=160
+Len=2
+
+[ValueSet]
+Label=CashReceipts_DairyProduce
+Name=E5_CASHRECEIPTS_DAIRYPRODUCE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_OstrichFarming
+Name=E5_CASHRECEIPTS_OSTRICHFARMING
+Start=162
+Len=2
+
+[ValueSet]
+Label=CashReceipts_OstrichFarming
+Name=E5_CASHRECEIPTS_OSTRICHFARMING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Poultry
+Name=E5_CASHRECEIPTS_POULTRY
+Start=164
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Poultry
+Name=E5_CASHRECEIPTS_POULTRY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Horticulture
+Name=E5_CASHRECEIPTS_HORTICULTURE
+Start=166
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Horticulture
+Name=E5_CASHRECEIPTS_HORTICULTURE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Sorghum/MaizeProcessing
+Name=E5_CASHRECEIPTS_SORGHUM_MAIZE_PROCESSING
+Start=168
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Sorghum/MaizeProcessing
+Name=E5_CASHRECEIPTS_SORGHUM_MAIZE_PROCESSING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Fruits/VegesProcessing
+Name=E5_CASHRECEIPTS_FRUITS_VEGES_PROCESSING
+Start=170
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Fruits/VegesProcessing
+Name=E5_CASHRECEIPTS_FRUITS_VEGES_PROCESSING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_Hides And Skin Processing
+Name=E5_CASHRECEIPTS_HIDES_AND_SKIN_PROCESSING
+Start=172
+Len=2
+
+[ValueSet]
+Label=CashReceipts_Hides And Skin Processing
+Name=E5_CASHRECEIPTS_HIDES_AND_SKIN_PROCESSING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=No Agricultural Activitie Sales
+Name=E5_CASHRECEIPTS_NONE
+Start=174
+Len=2
+
+[ValueSet]
+Label=No Agricultural Activitie Sales
+Name=E5_CASHRECEIPTS_NONE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_OtherSpecify
+Name=E5_CASHRECEIPTS_OTHERSPECIFY
+Start=176
+Len=2
+
+[ValueSet]
+Label=CashReceipts_OtherSpecify
+Name=E5_CASHRECEIPTS_OTHERSPECIFY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=CashReceipts_OtherSpecifyText
+Name=E5_CASHRECEIPTS_OTHER_DESRIPTION
+Start=178
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Traditional beer sales
+Name=E6_TRADITIONAL_BEER_SALES
+Start=208
+Len=1
+
+[ValueSet]
+Label=Traditional beer sales
+Name=E6_TRADITIONAL_BEER_SALES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Non Alcoholic beverage sales
+Name=E6_NON_ALCOHOLIC_BEVERAGE_SALES
+Start=209
+Len=1
+
+[ValueSet]
+Label=Non Alcoholic beverage sales
+Name=E6_NON_ALCOHOLIC_BEVERAGE_SALES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Craftwork sales
+Name=E6_CRAFTWORK_SALES
+Start=210
+Len=1
+
+[ValueSet]
+Label=Craftwork sales
+Name=E6_CRAFTWORK_SALES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Clothes sales
+Name=E6_CLOTHES_SALES
+Start=211
+Len=1
+
+[ValueSet]
+Label=Clothes sales
+Name=E6_CLOTHES_SALES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Cooked food sales
+Name=E6_COOKED_FOOD_SALES
+Start=212
+Len=1
+
+[ValueSet]
+Label=Cooked food sales
+Name=E6_COOKED_FOOD_SALES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=No Household Activities Sales
+Name=E6_NONE
+Start=213
+Len=1
+
+[ValueSet]
+Label=No Household Activities Sales
+Name=E6_NONE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Other Household activities sales
+Name=E6_OTHER_SPECIFY
+Start=214
+Len=1
+
+[Item]
+Label=Other Sale of Household Activities
+Name=E6_OTHER_HOUSEHOLD_SALES_DESRIPTION
+Start=215
+Len=30
+DataType=Alpha
+
+[Item]
+Label=BW Remitance from Employment
+Name=E7_BW_REMITANCE_EMPLOYMENT_WAGE_SALARY
+Start=245
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Employment
+Name=E7_BW_REMITANCE_EMPLOYMENT_WAGE_SALARY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Business Income
+Name=E7_BW_REMITANCE_BUSINESS_INCOME
+Start=248
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Business Income
+Name=E7_BW_REMITANCE_BUSINESS_INCOME_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Rental Income
+Name=E7_BW_REMITANCE_RENTAL_INCOME
+Start=251
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Rental Income
+Name=E7_BW_REMITANCE_RENTAL_INCOME_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Retired Persons Pension
+Name=E7_BW_REMITANCE_PENSION_RETIRED_PERSON
+Start=254
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Retired Persons Pension
+Name=E7_BW_REMITANCE_PENSION_RETIRED_PERSON_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Contributory Pension
+Name=E7_BW_REMITANCE_CONTRIBUTORY_PENSIONS
+Start=257
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Contributory Pension
+Name=E7_BW_REMITANCE_CONTRIBUTORY_PENSIONS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Interest on Savings
+Name=E7_BW_REMITANCE_INTEREST_ON_SAVINGS
+Start=260
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Interest on Savings
+Name=E7_BW_REMITANCE_INTEREST_ON_SAVINGS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Dividend Payments
+Name=E7_BW_REMITANCE_DIVIDEND_PAYMENTS
+Start=263
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Dividend Payments
+Name=E7_BW_REMITANCE_DIVIDEND_PAYMENTS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Child Maintenance
+Name=E7_BW_REMITANCE_CHILD_MAINTENANCE
+Start=266
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Child Maintenance
+Name=E7_BW_REMITANCE_CHILD_MAINTENANCE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Cash Gifts Received
+Name=E7_BW_CASH_GIFTS_RECEIVED
+Start=269
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Cash Gifts Received
+Name=E7_BW_CASH_GIFTS_RECEIVED_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Inkind Gifts Received
+Name=E7_BW_INKIND_GIFTS_RECEIVED
+Start=272
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Inkind Gifts Received
+Name=E7_BW_INKIND_GIFTS_RECEIVED_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Cash Loans or Salary Advance
+Name=E7_BW_CASH_LOANS_SALARY_ADVANCE
+Start=275
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Cash Loans or Salary Advance
+Name=E7_BW_CASH_LOANS_SALARY_ADVANCE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Destitute Program
+Name=E7_BW_DESTITUTE_PROGRAM
+Start=278
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Destitute Program
+Name=E7_BW_DESTITUTE_PROGRAM_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Ophan Care Program
+Name=E7_BW_ORPHAN_CARE_PROGRAM
+Start=281
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Ophan Care Program
+Name=E7_BW_ORPHAN_CARE_PROGRAM_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from World War 2 Veterans
+Name=E7_BW_WORLD_WAR_2_VETERANS
+Start=284
+Len=3
+
+[ValueSet]
+Label=BW Remitance from World War 2 Veterans
+Name=E7_BW_WORLD_WAR_2_VETERANS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Old Age Pension
+Name=E7_BW_OL_AGE_PENSION
+Start=287
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Old Age Pension
+Name=E7_BW_OL_AGE_PENSION_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Remitance from Student Allowance
+Name=E7_BW_STUDENT_ALLOWANCE
+Start=290
+Len=3
+
+[ValueSet]
+Label=BW Remitance from Student Allowance
+Name=E7_BW_STUDENT_ALLOWANCE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW No Remitances Received
+Name=E7_NO_BW_REMITANCES
+Start=293
+Len=3
+
+[ValueSet]
+Label=BW No Remitances Received
+Name=E7_NO_BW_REMITANCES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Other Remitance Received
+Name=E7_BW_REMITANCE_OTHER_SPECIFY
+Start=296
+Len=3
+
+[ValueSet]
+Label=BW Other Remitance Received
+Name=E7_BW_REMITANCE_OTHER_SPECIFY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=BW Other Remitance Received Not Listed
+Name=E7_BW_OTHER_REMITANCE_DESCRIPTION
+Start=299
+Len=30
+DataType=Alpha
+
+[ValueSet]
+Label=BW Other Remitance Received Not Listed
+Name=E7_BW_OTHER_REMITANCE_DESCRIPTION_VS1
+Value='1                             ';Yes
+Value='2                             ';No
+
+[Item]
+Label=Outside Remitance from Employment
+Name=E7_OUTSIDE_REMITANCE_EMPLOYMENT_WAGE_SALARY
+Start=329
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Employment
+Name=E7_OUTSIDE_REMITANCE_EMPLOYMENT_WAGE_SALARY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Business Income
+Name=E7_OUTSIDE_REMITANCE_BUSINESS_INCOME
+Start=332
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Business Income
+Name=E7_OUTSIDE_REMITANCE_BUSINESS_INCOME_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Rental Income
+Name=E7_OUTSIDE_REMITANCE_RENTAL_INCOME
+Start=335
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Rental Income
+Name=E7_OUTSIDE_REMITANCE_RENTAL_INCOME_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Retired Persons Pension
+Name=E7_OUTSIDE_REMITANCE_PENSION_RETIRED_PERSON
+Start=338
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Retired Persons Pension
+Name=E7_OUTSIDE_REMITANCE_PENSION_RETIRED_PERSON_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Contributory Pension
+Name=E7_OUTSIDE_REMITANCE_CONTRIBUTORY_PENSIONS
+Start=341
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Contributory Pension
+Name=E7_OUTSIDE_REMITANCE_CONTRIBUTORY_PENSIONS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Interest on Savings
+Name=E7_OUTSIDE_REMITANCE_INTEREST_ON_SAVINGS
+Start=344
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Interest on Savings
+Name=E7_OUTSIDE_REMITANCE_INTEREST_ON_SAVINGS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Dividend Payments
+Name=E7_OUTSIDE_REMITANCE_DIVIDEND_PAYMENTS
+Start=347
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Dividend Payments
+Name=E7_OUTSIDE_REMITANCE_DIVIDEND_PAYMENTS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Child Maintenance
+Name=E7_OUTSIDE_REMITANCE_CHILD_MAINTENANCE
+Start=350
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Child Maintenance
+Name=E7_OUTSIDE_REMITANCE_CHILD_MAINTENANCE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Cash Gifts Received
+Name=E7_OUTSIDE_CASH_GIFTS_RECEIVED
+Start=353
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Cash Gifts Received
+Name=E7_OUTSIDE_CASH_GIFTS_RECEIVED_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Inkind Gifts Received
+Name=E7_OUTSIDE_INKIND_GIFTS_RECEIVED
+Start=356
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Inkind Gifts Received
+Name=E7_OUTSIDE_INKIND_GIFTS_RECEIVED_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Cash Loans or Salary Advance
+Name=E7_OUTSIDE_CASH_LOANS_SALARY_ADVANCE
+Start=359
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Cash Loans or Salary Advance
+Name=E7_OUTSIDE_CASH_LOANS_SALARY_ADVANCE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Destitute Program
+Name=E7_OUTSIDE_DESTITUTE_PROGRAM
+Start=362
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Destitute Program
+Name=E7_OUTSIDE_DESTITUTE_PROGRAM_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Ophan Care Program
+Name=E7_OUTSIDE_ORPHAN_CARE_PROGRAM
+Start=365
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Ophan Care Program
+Name=E7_OUTSIDE_ORPHAN_CARE_PROGRAM_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from World War 2 Veterans
+Name=E7_OUTSIDE_WORLD_WAR_2_VETERANS
+Start=368
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from World War 2 Veterans
+Name=E7_OUTSIDE_WORLD_WAR_2_VETERANS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Old Age Pension
+Name=E7_OUTSIDE_OLD_AGE_PENSION
+Start=371
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Old Age Pension
+Name=E7_OUTSIDE_OLD_AGE_PENSION_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Remitance from Student Allowance
+Name=E7_OUTSIDE_STUDENT_ALLOWANCE
+Start=374
+Len=3
+
+[ValueSet]
+Label=Outside Remitance from Student Allowance
+Name=E7_OUTSIDE_STUDENT_ALLOWANCE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside No Remitances Received
+Name=E7_NO_OUTSIDE_REMITANCES
+Start=377
+Len=3
+
+[ValueSet]
+Label=Outside No Remitances Received
+Name=E7_NO_OUTSIDE_REMITANCES_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Other Remitance Received
+Name=E7_OUTSIDE_REMITANCE_OTHER_SPECIFY
+Start=380
+Len=3
+
+[ValueSet]
+Label=Outside Other Remitance Received
+Name=E7_OUTSIDE_REMITANCE_OTHER_SPECIFY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Outside Other Remitance Received Not Listed
+Name=E7_OUTSIDE_OTHER_REMITANCE_DESCRIPTION
+Start=383
+Len=30
+DataType=Alpha
+
+[ValueSet]
+Label=Outside Other Remitance Received Not Listed
+Name=E7_OUTSIDE_OTHER_REMITANCE_DESCRIPTION_VS1
+Value='1                             ';Yes
+Value='2                             ';No
+
+[Item]
+Label=Type of housing unit for the household
+Name=E8_TYPE_OF_HOUSING_UNIT
+Start=413
+Len=2
+
+[ValueSet]
+Label=Type of housing unit for the household
+Name=E8_TYPE_OF_HOUSING_UNIT_VS1
+Value=1;Traditional
+Value=2;Mixed
+Value=3;Detached
+Value=4;Semi- detached
+Value=5;Town house/Terraced
+Value=6;Flats/Apartment
+Value=7;Part of commercial  building
+Value=8;Movable
+Value=9;Shack
+Value=10;Rooms
+
+[Item]
+Label=Acquisition of housing unit
+Name=E9_TENURE_OF_HOUSING_UNIT
+Start=415
+Len=2
+
+[ValueSet]
+Label=Acquisition of housing unit
+Name=E9_TENURE_OF_HOUSING_UNIT_VS1
+Value=1;Self built (Owner-occupied)
+Value=2;Family Home
+Value=3;Rent Individual
+Value=4;Free(job related)
+Value=5;Rent Government
+Value=6;Free: Inherited
+Value=7;Free
+Value=8;Purchased (Owner Occupied)
+Value=9;Rent: Company
+Value=10;Rent: BHC
+Value=11;Rent: Council
+Value=12;Rent:VDC
+Value=13;Donated
+Value=99;Do not know
+
+[Item]
+Label=Total number of room in the housing unit
+Name=E10_NUMBER_OF_ROOMS
+Start=417
+Len=2
+
+[ValueSet]
+Label=Total number of room in the housing unit
+Name=E10_NUMBER_OF_ROOMS_VS1
+Value=1:12;Number of Rooms
+
+[Item]
+Label=Material of construction used for the wall
+Name=E11_WALL_MATERIAL_MAIN_HOUSE
+Start=419
+Len=2
+
+[ValueSet]
+Label=Material of construction used for the wall
+Name=E11_WALL_MATERIAL_MAIN_HOUSE_VS1
+Value=1;Conventional bricks/blocks
+Value=2;Mud bricks/blocks
+Value=3;Mud and poles/cow dung/thatch/reeds
+Value=4;Poles and reeds
+Value=5;Corrugated Iron/Zinc/Tin
+Value=6;Asbestos
+Value=7;Wood
+Value=8;Stone
+
+[Item]
+Label=Other wall Material not listed
+Name=E11_WALL_MATERIAL_OTHER_SPECIFY
+Start=421
+Len=2
+
+[Item]
+Label=Other specified wall material
+Name=E11_OTHER_WALLS_DESCRIPTION
+Start=423
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Material of construction used for the floor
+Name=E12_FLOOR_MATERIAL
+Start=453
+Len=1
+
+[ValueSet]
+Label=Material of construction used for the floor
+Name=E12_FLOOR_MATERIAL_VS1
+Value=1;Cement
+Value=2;Floor Tiles
+Value=3;Mud
+Value=4;Mud/dung
+Value=5;Wood
+Value=6;Brick/Stones
+Value=7;None
+
+[Item]
+Label=Other floor material not listed
+Name=E12_OTHER_FLOOR_MATERIAL_NOT_LISTED
+Start=454
+Len=1
+
+[Item]
+Label=Other specified floor material
+Name=E12_OTHER_FLOOR_DESCRIPTION
+Start=455
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Material of construction used for roofing
+Name=E13_ROOFING_MATERIAL_MAIN_HOUSE
+Start=485
+Len=1
+
+[ValueSet]
+Label=Material of construction used for roofing
+Name=E13_ROOFING_MATERIAL_MAIN_HOUSE_VS1
+Value=1;Slate
+Value=2;Thatch
+Value=3;Roof tiles
+Value=4;Corrugated Iron/Zinc/Tin
+Value=5;Asbestos
+Value=6;Concrete
+
+[Item]
+Label=Other roofing material not listed
+Name=E13_OTHER_ROOFING_MATERIAL_NOT_LISTED
+Start=486
+Len=1
+
+[Item]
+Label=Other specified roofing material
+Name=E13_OTHER_ROOF_DESCRIPTION
+Start=487
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Main source of drinking water supply for the household
+Name=E14_PRINCIPAL_DRINKING_WATER_SUPPLY
+Start=517
+Len=2
+
+[ValueSet]
+Label=Main source of drinking water supply for the household
+Name=E14_PRINCIPAL_DRINKING_WATER_SUPPLY_VS1
+Value=1;Piped indoors
+Value=2;Piped outdoors
+Value=3;Neighbour’s Tap
+Value=4;Communal tap
+Value=5;Bouser
+Value=6;Tanker
+Value=7;Well
+Value=8;Borehole
+Value=9;River/Stream
+Value=10;Dam/Pan
+Value=11;Rain water tank
+Value=12;Spring water
+Value=13;Bottled water
+
+[Item]
+Label=Other source of drinking water supply not listed
+Name=E14_OTHER_SOURCE_OF_DRINKING_WATER_SUPPLY_NOT_LISTED
+Start=519
+Len=2
+
+[Item]
+Label=Other specified source of drinking water
+Name=E14_OTHER_DRINKING_WATER_SUPPLY_DESCRIPTION
+Start=521
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Main source of water for other use
+Name=E15_PRINCIPAL_WATER_SUPPLY_OTHER_USE
+Start=551
+Len=2
+
+[ValueSet]
+Label=Main source of water for other use
+Name=E15_PRINCIPAL_WATER_SUPPLY_OTHER_USE_VS1
+Value=1;Piped indoors
+Value=2;Piped outdoors
+Value=3;Neighbour
+Value=4;Communal Tap
+Value=5;Bouser
+Value=6;Tanker
+Value=7;Well
+Value=8;Borehole
+Value=9;River/Stream
+Value=10;Dam/Pan
+Value=11;Rain water tank
+Value=12;Spring water
+
+[Item]
+Label=Source of water not listed
+Name=E15_SOURCE_OF_WATER_NOT_LISTED
+Start=553
+Len=2
+
+[Item]
+Label=Other specified source of water
+Name=E15_OTHER_WATER_SOURCE_DESCRIPTION
+Start=555
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Main toilet facility used by the household
+Name=E16_TYPE_OF_TOILET
+Start=585
+Len=2
+
+[ValueSet]
+Label=Main toilet facility used by the household
+Name=E16_TYPE_OF_TOILET_VS1
+Value=11;Exclusive Use Flush toilet SewerLine
+Value=12;Exclusive Use Flush toilet SepticTank
+Value=13;Exclusive Use  Ventilated Improved (VIP)
+Value=14;Exclusive Use Pit Latrine
+Value=15;Exclusive Use Dry Compost (e.g. Enviro Loo)
+Value=21;Shared Flush toilet SewerLine
+Value=22;Shared Flush Toilet SepticTank
+Value=23;Shared Ventilated Improved (VIP)
+Value=24;Shared Pit Latrine
+Value=25;Shared Dry Compost (e.g. Enviro Loo)
+Value=31;Communal Flush toilet SewerLine
+Value=32;Communal Flush Toilet SepticTank
+Value=33;Communal Ventilated Improved (VIP)
+Value=34;Communal Pit Latrine
+Value=35;Communal Dry Compost (e.g. Enviro Loo)
+Value=41;Neighbour Flush toilet SewerLine
+Value=42;Neighbour Flush toilet SepticTank
+Value=43;Neighbour Ventilated Improved (VIP)
+Value=44;Neighbour Pit Latrine
+Value=45;Neighbour Dry Compost (e.g. Enviro Loo)
+Value=50;None
+
+[Item]
+Label=Bathroom availability
+Name=E17_BATHROOM_AVAILABILITY
+Start=587
+Len=2
+
+[ValueSet]
+Label=Bathroom availability
+Name=E17_BATHROOM_AVAILABILITY_VS1
+Value=11;ExclusiveUse -Yes, with fixed  bath or shower within dwelling unit
+Value=12;ExclusiveUse -Yes, without fixed bath or shower within dwelling unit
+Value=13;ExclusiveUse-Yes, with fixed  bath or shower outside dwelling unit
+Value=14;ExclusiveUse-Yes, without fixed bath or shower outside dwelling unit
+Value=21;Shared -Yes, with fixed  bath or shower within dwelling unit
+Value=22;Shared -Yes, without fixed bath or shower within dwelling unit
+Value=23;Shared-Yes, with fixed  bath or shower outside dwelling unit
+Value=24;Shared-Yes, without fixed bath or shower outside dwelling unit
+Value=35;No bathroom available
+
+[Item]
+Label=Kitchen availability
+Name=E18_KITCHEN_AVAILABILITY
+Start=589
+Len=2
+
+[ValueSet]
+Label=Kitchen availability
+Name=E18_KITCHEN_AVAILABILITY_VS1
+Value=11;Exclusive Use Yes, kitchen within housing unit
+Value=12;Exclusive Use Yes, other space for cooking within housing unit such as kitchenette
+Value=13;Exclusive Use Yes, kitchen or other space for cooking outside housing unit
+Value=21;Shared Yes, kitchen within housing unit
+Value=22;Shared Yes, other space for cooking within housing unit such as kitchenette
+Value=23;Shared Yes, kitchen or other space for cooking outside housing unit
+Value=34;No space or kitchen for cooking within dwelling unit
+
+[Item]
+Label=Refuse Or rubbish dispose off
+Name=E19_MODE_OF_REFUSE_DISPOSAL
+Start=591
+Len=1
+
+[ValueSet]
+Label=Refuse Or rubbish dispose off
+Name=E19_MODE_OF_REFUSE_DISPOSAL_VS1
+Value=1;Regularly Collected
+Value=2;Irregularly Collected
+Value=3;Burning
+Value=4;Roadside collection
+Value=5;Rubbish pit / bury
+Value=6;Self Dumping
+
+[Item]
+Label=Other refuse disposal method not listed
+Name=E19_OTHER_REFUSE_DISPOSAL_METHOD_NOT_LISTED
+Start=592
+Len=1
+
+[Item]
+Label=Other rubbish refuse disposal Described
+Name=E19_OTHER_REFUSE_DISPOSAL_DESCRIPTION
+Start=593
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Household main source of fuel for lighting
+Name=E20_PRINCIPAL_ENERGY_SOURCE_OF_LIGHTING_FUEL
+Start=623
+Len=2
+
+[ValueSet]
+Label=Household main source of fuel for lighting
+Name=E20_PRINCIPAL_ENERGY_SOURCE_OF_LIGHTING_FUEL_VS1
+Value=1;Electricity NationalGrid
+Value=2;Electricity MiniGrid
+Value=3;Electricity Solar
+Value=4;Electricity Battery
+Value=5;Electricity Generator
+Value=6;Solar Home System
+Value=7;Solar Lantern
+Value=8;LPG
+Value=9;Candle
+Value=10;Paraffin
+Value=11;Firewood
+Value=12;Charcoal
+
+[Item]
+Label=Other source for lighting not specified
+Name=E20_OTHER_SOURCE_FOR_LIGHTING_NOT_SPECIFIED
+Start=625
+Len=2
+
+[Item]
+Label=Other source of lighting desribed
+Name=E20_OTHER_SOURCE_LIGHTING_DESCRIPTION
+Start=627
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Household main source of fuel for cooking
+Name=E21_PRINCIPAL_ENERGY_FOR_COOKING
+Start=657
+Len=2
+
+[ValueSet]
+Label=Household main source of fuel for cooking
+Name=E21_PRINCIPAL_ENERGY_FOR_COOKING_VS1
+Value=1;Electricity (Grid)
+Value=2;Electricity (Petrol)
+Value=3;Solar Power
+Value=4;Gas (LPG)
+Value=5;Bio Gas
+Value=6;Wood
+Value=7;Paraffin
+Value=8;Cow dung
+Value=9;Coal
+Value=10;Crop waste
+Value=11;Charcoal
+Value=12;Other (specify)
+
+[Item]
+Label=Other source of fuel for cooking not listed
+Name=E21_OTHER_SOURCE_OF_FUEL_FOR_COOKING_NOT_LISTED
+Start=659
+Len=2
+
+[Item]
+Label=Other source for cooking described
+Name=E21_OTHER_SOURCE_COOKING_DESRIPTION
+Start=661
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Household main source of fuel for heating
+Name=E21_PRINCIPAL_ENERGY_SOURCE_OF_HEATING
+Start=691
+Len=2
+
+[ValueSet]
+Label=Household main source of fuel for heating
+Name=E21_PRINCIPAL_ENERGY_SOURCE_OF_HEATING_VS1
+Value=1;Electricity NationalGrid
+Value=2;Electricity MiniGrid
+Value=3;Electricity Generator
+Value=4;Solar Home System
+Value=5;LPG
+Value=6;Gasoline/Diesel
+Value=7;Kerosene/Paraffin
+Value=8;Coal
+Value=9;Charcoal
+Value=10;Wood
+Value=11;Crop waste/grass/straw/shrubs
+Value=12;Animal waste/ dung
+Value=13;None
+
+[Item]
+Label=Other fuel for heating not listed
+Name=E21_OTHER_FUEL_FOR_HEATING_NOT_LISTED
+Start=693
+Len=2
+
+[Item]
+Label=Other source of heating
+Name=E22_OTHER_HEATING_SOURCE_DESCRIPTION
+Start=695
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Van/Combi Owership
+Name=E23_VAN_COMBI_OWNERSHIP
+Start=725
+Len=1
+
+[ValueSet]
+Label=Van/Combi Owership
+Name=E23_VAN_COMBI_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Car Owership
+Name=E23_CAR_OWNERSHIP
+Start=726
+Len=1
+
+[ValueSet]
+Label=Car Owership
+Name=E23_CAR_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Tractor Owership
+Name=E23_TRACTOR_OWNERSHIP
+Start=727
+Len=1
+
+[ValueSet]
+Label=Tractor Owership
+Name=E23_TRACTOR_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Donkey Cart Owership
+Name=E23_DONKEY_CART_OWNERSHIP
+Start=728
+Len=1
+
+[ValueSet]
+Label=Donkey Cart Owership
+Name=E23_DONKEY_CART_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Bicycle Owership
+Name=E23_BICYCLE_OWNERSHIP
+Start=729
+Len=1
+
+[ValueSet]
+Label=Bicycle Owership
+Name=E23_BICYCLE_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Wheelbarrow Owership
+Name=E23_WHEELBARROW_OWNERSHIP
+Start=730
+Len=1
+
+[ValueSet]
+Label=Wheelbarrow Owership
+Name=E23_WHEELBARROW_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Fixed Telephone Owership
+Name=E23_FIXED_TELEPHONE_OWNERSHIP
+Start=731
+Len=1
+
+[ValueSet]
+Label=Fixed Telephone Owership
+Name=E23_FIXED_TELEPHONE_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Computer Owership(Desktop,Laptop,Tablet or similar)
+Name=E23_COMPUTER_OWNERSHIP
+Start=732
+Len=1
+
+[ValueSet]
+Label=Computer Owership(Desktop,Laptop,Tablet or similar)
+Name=E23_COMPUTER_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Cellphone Owership
+Name=E23_CELLPHONE_OWNERSHIP
+Start=733
+Len=1
+
+[ValueSet]
+Label=Cellphone Owership
+Name=E23_CELLPHONE_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Mokoro/Canoe Owership
+Name=E23_MOKORO_CANOE_OWNERSHIP
+Start=734
+Len=1
+
+[ValueSet]
+Label=Mokoro/Canoe Owership
+Name=E23_MOKORO_CANOE_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Boat with Motor Owership
+Name=E23_BOAT_WITH_MOTOR_OWNERSHIP
+Start=735
+Len=1
+
+[ValueSet]
+Label=Boat with Motor Owership
+Name=E23_BOAT_WITH_MOTOR_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Sewing Machine Owership
+Name=E23_SEWING_MACHINE_OWNERSHIP
+Start=736
+Len=1
+
+[ValueSet]
+Label=Sewing Machine Owership
+Name=E23_SEWING_MACHINE_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Motorbike Owership
+Name=E23_MOTORBIKE_OWNERSHIP
+Start=737
+Len=1
+
+[ValueSet]
+Label=Motorbike Owership
+Name=E23_MOTORBIKE_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Plough Owership
+Name=E23_PLOUGH_OWNERSHIP
+Start=738
+Len=1
+
+[ValueSet]
+Label=Plough Owership
+Name=E23_PLOUGH_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Refridgerator Ownership
+Name=E23_REFRIDGERATOR_OWNERSHIP
+Start=739
+Len=1
+
+[ValueSet]
+Label=Refridgerator Ownership
+Name=E23_REFRIDGERATOR_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Radio Ownership
+Name=E23_RADIO_OWNERSHIP
+Start=740
+Len=1
+
+[ValueSet]
+Label=Radio Ownership
+Name=E23_RADIO_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Watch Ownership
+Name=E23_WATCH_OWNERSHIP
+Start=741
+Len=1
+
+[ValueSet]
+Label=Watch Ownership
+Name=E23_WATCH_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=TV Ownership
+Name=E23_TV_OWNERSHIP
+Start=742
+Len=1
+
+[ValueSet]
+Label=TV Ownership
+Name=E23_TV_OWNERSHIP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Other Durable Not Listed
+Name=E23_OTHER_DURABLE_NOT_LISTED
+Start=743
+Len=1
+
+[Item]
+Label=Other Durable Specified Description
+Name=E23_OTHER_DURABLE_SPECIFIED_DESCRIPTION
+Start=744
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Internet connectivity
+Name=E24_INTERNET_CONNECTIVITY
+Start=774
+Len=1
+
+[ValueSet]
+Label=Internet connectivity
+Name=E24_INTERNET_CONNECTIVITY_VS1
+Value=1;Yes
+Value=2;No
+Value=3;Don’t know
+
+[Item]
+Label=Type of internet used in the household
+Name=E25_INTERNET_TYPE
+Start=775
+Len=2
+
+[ValueSet]
+Label=Type of internet used in the household
+Name=E25_INTERNET_TYPE_VS1
+Value=1;Asymmetric digital Subscriber Line (ADSL) (i.e Provided by BTC or Internet Service Providers)
+Value=2;Fixed Wireless (Provided by Internet Service Providers, Orange, BTC or Mascom)
+Value=3;Mobile Internet (Provided by Mascom, BTC and Orange through their mobile cellular networks)
+Value=4;Satellite
+Value=5;No access
+Value=99;Don't Know
+Value=6;Other (specify)
+
+[Item]
+Label=Other types
+Name=E27_OTHER_SPECIFY
+Start=777
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Reasons for not accesing internet
+Name=E28_REASONS_FOR_NO_INTERNET
+Start=807
+Len=1
+
+[ValueSet]
+Label=Reasons for not accesing internet
+Name=E28_REASONS_FOR_NO_INTERNET_VS1
+Value=1;Have access to Internet elsewhere
+Value=2;Don't need internet (because not useful, not interesting etc)
+Value=3;Equipment costs too high
+Value=4;Connection and subscription costs too high
+Value=5;Privacy or security concerns
+Value=6;Broadband internet is not available in our area
+Value=7;Physical disability
+Value=8;Lack of knowledge
+Value=9;Other (specify)
