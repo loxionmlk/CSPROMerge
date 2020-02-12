@@ -222,7 +222,7 @@ Label=Section_A
 Name=SECTION_A
 RecordTypeValue='2'
 MaxRecords=30
-RecordLen=325
+RecordLen=328
 
 [Item]
 Label=Person Name
@@ -244,9 +244,15 @@ Name=A2_SERIAL_NO_VS1
 Value=1:30
 
 [Item]
+Label=Test Item 1
+Name=TEST_ITEM_1
+Start=55
+Len=3
+
+[Item]
 Label=Relationship
 Name=A3_RELATIONSHIP
-Start=55
+Start=58
 Len=2
 
 [ValueSet]
@@ -270,7 +276,7 @@ Value=13;Not Related
 [Item]
 Label=Sex
 Name=A4_SEX
-Start=57
+Start=60
 Len=1
 
 [ValueSet]
@@ -282,7 +288,7 @@ Value=2;Female
 [Item]
 Label=Age in Years
 Name=A5_AGE
-Start=58
+Start=61
 Len=2
 ZeroFill=Yes
 
@@ -294,13 +300,13 @@ Value=0:98
 [Item]
 Label=Date of Birth
 Name=A6_DOB
-Start=60
+Start=63
 Len=6
 
 [Item]
 Label=Month of Birth
 Name=A6M_MOB
-Start=60
+Start=63
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -313,7 +319,7 @@ Value=1:12
 [Item]
 Label=Year of Birth
 Name=A6Y_YOB
-Start=62
+Start=65
 Len=4
 ItemType=SubItem
 
@@ -325,7 +331,7 @@ Value=1922:2020
 [Item]
 Label=Country of Citizenship
 Name=A7_CITIZENSHIP
-Start=66
+Start=69
 Len=3
 
 [ValueSet]
@@ -584,7 +590,7 @@ Value=894;Zambia
 [Item]
 Label=Citizenship  Acquired
 Name=A8_CIT_ACQUIRED
-Start=69
+Start=72
 Len=1
 
 [ValueSet]
@@ -596,27 +602,27 @@ Value=2;Yes by Naturalization
 [Item]
 Label=Duration of  Residence
 Name=A9_RESIDENCE
-Start=70
+Start=73
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Test Item 2
 Name=TEST_ITEM_2
-Start=72
+Start=75
 Len=2
 
 [Item]
 Label=Mothers's Place of Birth
 Name=A10_PLACE_BIRTH
-Start=74
+Start=77
 Len=7
 ZeroFill=Yes
 
 [Item]
 Label=Place Usually Live Now
 Name=A11_PLACE_NOW
-Start=81
+Start=84
 Len=4
 ZeroFill=Yes
 
@@ -631,7 +637,7 @@ Value=7;Other Country
 [Item]
 Label=Residence 1 Year Ago
 Name=A12_RES_YR_AGO
-Start=85
+Start=88
 Len=4
 ZeroFill=Yes
 
@@ -647,7 +653,7 @@ Value=7;Other Country
 [Item]
 Label=Residence 5 Years Ago
 Name=A13_RES_YR_AGO
-Start=89
+Start=92
 Len=4
 ZeroFill=Yes
 
@@ -663,7 +669,7 @@ Value=7;Other Country
 [Item]
 Label=Biological Mother Alive
 Name=A14_MOTHER_ALIVE
-Start=93
+Start=96
 Len=1
 
 [ValueSet]
@@ -676,7 +682,7 @@ Value=3;Don't Know
 [Item]
 Label=Biological Father Alive
 Name=A15_FATHER_ALIVE
-Start=94
+Start=97
 Len=1
 
 [ValueSet]
@@ -689,7 +695,7 @@ Value=3;Don't know
 [Item]
 Label=Birth Registration
 Name=A16_BIRTH_REG
-Start=95
+Start=98
 Len=1
 
 [ValueSet]
@@ -702,7 +708,7 @@ Value=3;Dont Know
 [Item]
 Label=National ID (OMANG)
 Name=A17_ID_OMANG
-Start=96
+Start=99
 Len=1
 
 [ValueSet]
@@ -714,7 +720,7 @@ Value=2;No
 [Item]
 Label=Language Spoken at Home
 Name=A18_SAM_LANG
-Start=97
+Start=100
 Len=3
 ZeroFill=Yes
 
@@ -740,7 +746,7 @@ Name=NOTAPPL,Special
 [Item]
 Label=Early Childhood Language
 Name=A19_ECH_LANG
-Start=100
+Start=103
 Len=2
 ZeroFill=Yes
 
@@ -766,7 +772,7 @@ Name=NOTAPPL,Special
 [Item]
 Label=Tribe or Nationality
 Name=A20_TRIBE_NATIONALTY
-Start=102
+Start=105
 Len=3
 ZeroFill=Yes
 
@@ -972,7 +978,7 @@ Value=829;Vanuatu
 [Item]
 Label=Read or Write in any Language
 Name=A21_LITERACY
-Start=105
+Start=108
 Len=1
 
 [ValueSet]
@@ -986,7 +992,7 @@ Name=NOTAPPL,Special
 [Item]
 Label=Ever Attended School
 Name=A22_ATT_SCHOOL
-Start=106
+Start=109
 Len=1
 
 [ValueSet]
@@ -1000,7 +1006,7 @@ Value=4;Never attended
 [Item]
 Label=Highest Level Attended
 Name=A23_HIGHEST_LEVEL
-Start=107
+Start=110
 Len=4
 ZeroFill=Yes
 
@@ -1021,7 +1027,7 @@ Value=16;University
 [Item]
 Label=Type of Education
 Name=A23B_TYPE_EDUC
-Start=107
+Start=114
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -1043,7 +1049,7 @@ Value=16;University
 [Item]
 Label=Level Completed / Doing
 Name=A23C_LEVEL_COMP
-Start=109
+Start=116
 Len=1
 ItemType=SubItem
 
@@ -1062,7 +1068,7 @@ Name=NOTAPPL,Special
 [Item]
 Label=Year Completed / Doing
 Name=A23D_YEAR_COMP
-Start=111
+Start=117
 Len=1
 
 [ValueSet]
@@ -1075,14 +1081,14 @@ Name=NOTAPPL,Special
 [Item]
 Label=Subject of Training Description
 Name=A24_SUB_TRAINING1
-Start=112
+Start=118
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Subject of Training
 Name=A24B_SUB_TRAINING
-Start=142
+Start=148
 Len=3
 
 [ValueSet]
@@ -1325,7 +1331,7 @@ Value=999;Fields of Education Not Known or Unspecified
 [Item]
 Label=Religion
 Name=A25_RELIGION
-Start=145
+Start=151
 Len=1
 
 [ValueSet]
@@ -1343,14 +1349,14 @@ Value=8;Other (Specify)
 [Item]
 Label=Other Religion (Specify)
 Name=A25B_OTHER_RELIGION
-Start=146
+Start=152
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Marital Status
 Name=A26_MARITAL_STATUS
-Start=176
+Start=182
 Len=1
 
 [ValueSet]
@@ -1368,7 +1374,7 @@ Name=NOTAPPL,Special
 [Item]
 Label=Age at First Marriage
 Name=A27_AGE_1ST_MARRIAGE
-Start=177
+Start=183
 Len=2
 
 [ValueSet]
@@ -1381,14 +1387,14 @@ Name=NOTAPPL,Special
 [Item]
 Label=Duration of Marriage
 Name=A28_DURATION
-Start=179
+Start=185
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Mainly doing past seven days
 Name=A29_MAIN_SEVEN_DAYS
-Start=181
+Start=187
 Len=1
 ZeroFill=Yes
 
@@ -1403,7 +1409,7 @@ Name=NOTAPPL,Special
 [Item]
 Label=Since not working what did he/she do?
 Name=A30_ACTIVITY_DONE
-Start=182
+Start=188
 Len=1
 
 [ValueSet]
@@ -1420,14 +1426,14 @@ Name=NOTAPPL,Special
 [Item]
 Label=Worked as (Other Specify)
 Name=A30B_OTHER_SPECIFY
-Start=183
+Start=189
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Working as during past seven days
 Name=A31_WORKED_AS
-Start=213
+Start=219
 Len=1
 
 [ValueSet]
@@ -1446,7 +1452,7 @@ Value=9;Working at own agricultural activities (lands/cattle-posts)
 [Item]
 Label=Main Agricultural activities engaged in
 Name=A32_AGRI_ACTIVITIES
-Start=214
+Start=220
 Len=1
 
 [ValueSet]
@@ -1461,7 +1467,7 @@ Value=5;Making goods for household use
 [Item]
 Label=Main Purpose of Products Obtained
 Name=A33_PRODUCTS_OBTAINED
-Start=215
+Start=221
 Len=1
 
 [ValueSet]
@@ -1475,14 +1481,14 @@ Value=4;Only for household use
 [Item]
 Label=Occupation (Use two or more words to describe the occupation)
 Name=A34_OCCUPATION1
-Start=216
+Start=222
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Occupation Code
 Name=A34B_OCCUPATION
-Start=246
+Start=252
 Len=4
 
 [ValueSet]
@@ -1930,14 +1936,14 @@ Name=NOTAPPL,Special
 [Item]
 Label=Main Workplace describe  Product/Service/ Activity ( Industry)
 Name=A35_INDUSTRY1
-Start=250
+Start=256
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Industry Code
 Name=A35B_INDUSTRY
-Start=280
+Start=286
 Len=4
 
 [ValueSet]
@@ -2357,7 +2363,7 @@ Value=9900;Activities of Extraterritorial Organizations and Bodies
 [Item]
 Label=Sector of Employment
 Name=A36_EMP_SECTOR
-Start=284
+Start=290
 Len=1
 
 [ValueSet]
@@ -2376,7 +2382,7 @@ Value=9;Worked in own or household farm, (products are mainly for sale)
 [Item]
 Label=Own any Land
 Name=A37_OWN_LAND
-Start=285
+Start=291
 Len=1
 
 [ValueSet]
@@ -2394,7 +2400,7 @@ Value=8;None
 [Item]
 Label=How  land was aquired
 Name=A38_LAND_AQUIRED
-Start=286
+Start=292
 Len=1
 
 [ValueSet]
@@ -2411,7 +2417,7 @@ Value=7;All
 [Item]
 Label=Have Certificate/Tittle Deed for Land
 Name=A39_HVE_CERTIFICATE
-Start=287
+Start=293
 Len=1
 
 [ValueSet]
@@ -2426,107 +2432,107 @@ Value=5;No certificate / tittle deed
 [Item]
 Label=Number of Male children born alive
 Name=A40M_ALIVE
-Start=288
+Start=294
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Number of Female children born alive
 Name=A40F_F_ALIVE
-Start=290
+Start=296
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Number of Male children living with mother
 Name=A41M_M_WITH_MOTHER
-Start=292
+Start=298
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Number of Female children living with mother
 Name=A41F_F_WITH_MOTHER
-Start=294
+Start=300
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Number of Male children living elsewhere
 Name=A42M_M_ELSEWHERE
-Start=296
+Start=302
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Number of Female children living elsewhere
 Name=A42F_F_ELSEWHERE
-Start=298
+Start=304
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Number of male children dead
 Name=A43M_M_DEAD
-Start=300
+Start=306
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Number of female children dead
 Name=A43F_F_DEAD
-Start=302
+Start=308
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Age at first  Birth
 Name=A44_AGE_1ST_BIRTH
-Start=304
+Start=310
 Len=2
 
 [Item]
 Label=Males Born Past 12 months
 Name=A45M_M_PAST_YEAR
-Start=306
+Start=312
 Len=1
 
 [Item]
 Label=Females Born Past 12 Months
 Name=A45F_F_PAST_YEAR
-Start=307
+Start=313
 Len=1
 
 [Item]
 Label=Male Children Still Alive
 Name=A46M_M_STILL_ALIVE
-Start=308
+Start=314
 Len=1
 ZeroFill=Yes
 
 [Item]
 Label=Female Children Still Alive
 Name=A46F_F_STILL_ALIVE
-Start=309
+Start=315
 Len=1
 
 [Item]
 Label=Date of Birth of Last child born - Month
 Name=A47M_BIRTH_MONTH
-Start=310
+Start=316
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=Date of Birth of Last child born - Year
 Name=A47Y_BIRTH_YEAR
-Start=312
+Start=318
 Len=4
 
 [Item]
 Label=Use of mobile phone in the last 3 months
 Name=A48_USED_CELL_PHONE
-Start=316
+Start=322
 Len=1
 
 [ValueSet]
@@ -2538,7 +2544,7 @@ Value=2;No
 [Item]
 Label=Use of computer in the last 3 months
 Name=A49_USED_COMPUTER_DEVICE
-Start=317
+Start=323
 Len=1
 
 [ValueSet]
@@ -2550,7 +2556,7 @@ Value=2;No
 [Item]
 Label=Use of Internet in the last 3 months
 Name=A50_INTERNET_USE
-Start=318
+Start=324
 Len=1
 
 [ValueSet]
@@ -2562,7 +2568,7 @@ Value=2;No
 [Item]
 Label=Difficulty Seeing
 Name=A51_SEEING
-Start=319
+Start=325
 Len=1
 
 [ValueSet]
@@ -2577,7 +2583,7 @@ Value=5;Don't Know
 [Item]
 Label=Difficulty Hearing
 Name=A52_HEARING
-Start=320
+Start=326
 Len=1
 
 [ValueSet]
@@ -2592,7 +2598,7 @@ Value=5;Don't Know
 [Item]
 Label=Difficulty Communicating
 Name=A53_COMMUNICATING
-Start=321
+Start=327
 Len=1
 
 [ValueSet]
@@ -2607,7 +2613,7 @@ Value=5;Don't Know
 [Item]
 Label=Difficulty Walking
 Name=A54_WALKING
-Start=322
+Start=328
 Len=1
 
 [ValueSet]
@@ -2622,7 +2628,7 @@ Value=5;Don't Know
 [Item]
 Label=Difficulty Remembering
 Name=A55_REMEMBERING
-Start=323
+Start=329
 Len=1
 
 [ValueSet]
@@ -2637,7 +2643,7 @@ Value=5;Don't Know
 [Item]
 Label=Difficulty in Selfcare
 Name=A56_SELFCARE
-Start=324
+Start=330
 Len=1
 
 [ValueSet]
@@ -2652,7 +2658,7 @@ Value=5;Don't Know
 [Item]
 Label=Are the more persons?
 Name=ARE_THE_MORE_PERSONS
-Start=325
+Start=331
 Len=1
 
 [ValueSet]
