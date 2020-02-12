@@ -1027,7 +1027,7 @@ Value=16;University
 [Item]
 Label=Type of Education
 Name=A23B_TYPE_EDUC
-Start=114
+Start=110
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -1049,7 +1049,7 @@ Value=16;University
 [Item]
 Label=Level Completed / Doing
 Name=A23C_LEVEL_COMP
-Start=116
+Start=112
 Len=1
 ItemType=SubItem
 
